@@ -1,0 +1,91 @@
+@import "../../scss/01-helpers/variables";
+
+.aboutContainer {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 4rem;
+}
+
+.aboutImg {
+  width: 350px;
+  border-radius: 1.5rem;
+  justify-self: center;
+}
+
+.aboutInfo {
+  grid-template-columns: repeat(3, 140px);
+  gap: 0.5rem;
+  margin-bottom: $mb-2;
+}
+
+.aboutBox {
+  background-color: $container-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+  text-align: center;
+  padding: 1rem 1.25rem;
+}
+
+.aboutIcon {
+  font-size: 1.5rem;
+  color: $title-color;
+  margin-bottom: $mb-0-5;
+}
+
+.aboutTitle {
+  font-size: $small-font-size;
+  font-weight: $font-medium;
+}
+
+.aboutSubtitle {
+  font-size: $tiny-font-size;
+}
+
+.aboutDescription {
+  padding: 0 4rem 0 0;
+  margin-bottom: $mb-2-5;
+}
+
+@media screen and (max-width: 992px) {
+  .aboutContainer {
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+  }
+
+  .aboutImg {
+    width: 220px;
+  }
+
+  .aboutBox {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .aboutData {
+    text-align: center;
+  }
+
+  .aboutInfo {
+    justify-content: center;
+  }
+
+  .aboutDescription {
+    padding: 0 5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .aboutInfo {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .aboutDescription {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .aboutInfo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,47 @@
+@import "../../scss/01-helpers/variables";
+
+.scrollUp {
+  position: fixed;
+  right: 2.5rem;
+  bottom: -20%;
+  background-color: $title-color;
+  opacity: 0.6;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.4rem;
+  z-index: $z-tooltip;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    background-color: $title-color-dark;
+  }
+}
+
+.scrollIcon {
+  font-size: 1.5rem;
+  color: $container-color;
+}
+
+//show scroll
+.showScroll {
+  bottom: 3rem;
+}
+
+@media screen and (max-width: 992px) {
+  .scrollUp {
+    right: 1.5rem;
+    padding: 0.25rem 0.4rem;
+  }
+
+  .scrollIcon {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .showScroll {
+    bottom: 4rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .scrollUp {
+    right: 1rem;
+  }
+}

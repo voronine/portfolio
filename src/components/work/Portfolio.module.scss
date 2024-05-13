@@ -1,0 +1,118 @@
+@import "../../scss/01-helpers/variables";
+
+.workFilters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.75rem;
+  margin-bottom: $mb-2;
+}
+
+.workItem {
+  cursor: pointer;
+  color: $title-color;
+  padding: 0.25rem 0.75rem;
+  font-weight: $font-medium;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+  transition: all 0.2s ease 0s;
+  &:hover {
+    background-color: $title-color;
+    color: $container-color;
+  }
+}
+
+.workContainer {
+  grid-template-columns: repeat(2, max-content);
+  gap: 3rem;
+  justify-content: center;
+}
+
+.workCard {
+  background-color: $container-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.25rem;
+  border-radius: 1rem;
+}
+
+.workImage {
+  width: 295px;
+  border-radius: 1rem;
+  margin-bottom: $mb-1;
+}
+
+.workTitle {
+  font-size: $normal-font-size;
+  font-weight: $font-medium;
+  margin-bottom: $mb-0-5;
+}
+
+.workButton {
+  color: $text-color;
+  font-size: $small-font-size;
+  display: flex;
+  align-items: center;
+  column-gap: 0.25rem;
+}
+
+.workButtonIcon {
+  font-size: 1rem;
+  transition: 0.3s;
+}
+.workButton:hover .workButtonIcon {
+  transform: translate(0.25rem);
+}
+
+.workCardLinks {
+  display: flex;
+  justify-content: space-between;
+}
+//active work nav
+.workItemActive {
+  background-color: $title-color;
+  color: $container-color;
+}
+
+@media screen and (max-width: 992px) {
+  .workContainer {
+    gap: 1.25rem;
+  }
+
+  .workCard {
+    padding: 1rem;
+  }
+
+  .workImage {
+    margin-bottom: 0.75rem;
+  }
+
+  .workTitle {
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .workContainer {
+    grid-template-columns: max-content;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .workContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .workImage {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .workItem {
+    font-size: $small-font-size;
+  }
+
+  .workFilters {
+    column-gap: 0.25rem;
+  }
+}

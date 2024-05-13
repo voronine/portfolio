@@ -1,0 +1,21 @@
+@import "../01-helpers/variables";
+
+.section__title {
+  font-size: $h1-font-size;
+  color: $title-color;
+}
+.section__subTitle {
+  display: block;
+  font-size: $small-font-size;
+  margin-bottom: 4rem;
+}
+.section__title,
+.section__subTitle {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .section__subTitle {
+    margin-bottom: $mb-3;
+  }
+}

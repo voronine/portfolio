@@ -1,0 +1,80 @@
+@import "../../scss/01-helpers/variables";
+
+.skillsContainer {
+  grid-template-columns: repeat(2, 350px);
+  column-gap: 3rem;
+  justify-content: center;
+}
+
+.skillsContent {
+  background-color: $container-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 2rem 4rem;
+  border-radius: 1.25rem;
+}
+
+.skillsTitle {
+  font-size: $normal-font-size;
+  font-weight: $font-medium;
+  text-align: center;
+  margin-bottom: $mb-1-5;
+}
+
+.skillsBox {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
+.skillsGroup {
+  display: grid;
+  align-items: flex-start;
+  row-gap: 1rem;
+}
+
+.skillsData {
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.skills .bx-badge-check {
+  font-size: 1rem;
+  color: $title-color;
+}
+
+.skillsName {
+  font-size: $normal-font-size;
+  font-weight: $font-medium;
+  line-height: 18px;
+}
+
+.skillsLevel {
+  font-size: $tiny-font-size;
+}
+
+@media screen and (max-width: 992px) {
+  .skillsContainer {
+    grid-template-columns: max-content;
+    row-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .skillsContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .skillsContent {
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .skillsBox {
+    column-gap: 1.25rem;
+  }
+
+  .skillsName {
+    font-size: $small-font-size;
+  }
+}

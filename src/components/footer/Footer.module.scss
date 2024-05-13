@@ -1,0 +1,66 @@
+@import "../../scss/01-helpers/variables";
+
+.footer {
+  background-color: $container-color;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footerContainer {
+  padding: 2rem 0 6rem;
+}
+
+.footerTitle,
+.footerLink {
+  color: $title-color;
+}
+
+.footerTitle {
+  text-align: center;
+  margin-bottom: $mb-2;
+}
+
+.footerLink:hover {
+  color: $title-color-dark;
+}
+
+.footerList {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.5rem;
+  margin-bottom: $mb-2;
+}
+
+.footerSocials {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.25rem;
+}
+
+.footerSocialLink {
+  display: inline-flex;
+  background-color: $title-color;
+  color: $container-color;
+  font-size: 1.25rem;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  &:hover {
+    background-color: $title-color-dark;
+  }
+}
+
+.footerGit {
+  display: block;
+  margin-top: 3.5rem;
+  color: $title-color;
+  text-align: center;
+  font-size: $smaller-font-size;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  .footerSocialLink {
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+  }
+}

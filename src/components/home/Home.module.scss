@@ -1,0 +1,184 @@
+@import "../../scss/01-helpers/variables";
+
+.homeContainer {
+  row-gap: 7rem;
+}
+
+.homeContent {
+  grid-template-columns: 116px repeat(2, 1fr);
+  padding-top: 5.5rem;
+  column-gap: 2rem;
+  align-items: center;
+}
+
+.homeSubtitle {
+  position: relative;
+  font-size: $h3-font-size;
+  padding-left: 5.4rem;
+  font-weight: $font-normal;
+  margin-bottom: $mb-1;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    background-color: $text-color;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.homeDescription {
+  max-width: 400px;
+  margin-bottom: $mb-3;
+}
+
+.homeSocial {
+  display: grid;
+  grid-template-columns: max-content;
+  row-gap: 1rem;
+}
+
+.homeSocialIcon {
+  font-size: 1.25rem;
+  color: $title-color;
+  transition: 0.3s;
+  &:hover {
+    color: $title-color-dark;
+  }
+}
+.homeTitle {
+  font-size: 3rem;
+  margin-bottom: $mb-0-25;
+}
+
+.homeHand {
+  width: 38px;
+  height: 38px;
+  margin-left: 0.4rem;
+}
+.homeImg {
+  background-image: url("../../assets/profile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  box-shadow: inset 0 0 0 9px rgb(254 254 254 / 30%);
+  justify-self: center;
+  order: 1;
+  animation: home__profile 8s ease-in-out infinite;
+}
+@keyframes home__profile {
+  0% {
+    border-radius: 60% 40% 30% 70% /60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% /50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% /60% 30% 70% 40%;
+  }
+}
+
+.homeScroll {
+  margin-left: 9.25rem;
+}
+
+.wheel {
+  animation: scroll 2s ease infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(3.75rem);
+  }
+}
+
+.homeScrollName {
+  color: $title-color;
+  font-weight: $font-medium;
+  margin-right: $mb-0-25;
+  margin-left: 2px;
+}
+.homeScrollArrow {
+  font-size: 1.25rem;
+  color: $title-color;
+}
+
+@media screen and (max-width: 992px) {
+  .homeContent {
+    grid-template-columns: 100px repeat(2, 1fr);
+    column-gap: 1.25rem;
+  }
+
+  .homeHand {
+    width: 26px;
+    height: 26px;
+  }
+
+  .homeSubtitle {
+    padding-left: 3.75rem;
+    margin-bottom: $mb-1;
+    &::before {
+      width: 42px;
+    }
+  }
+
+  .homeDescription {
+    max-width: initial;
+    margin-bottom: $mb-2-5;
+  }
+
+  .homeImg {
+    width: 250px;
+    height: 250px;
+    box-shadow: inset 0 0 0 8px rgb(254 254 254 / 30%);
+  }
+
+  .homeScroll {
+    margin-left: 7.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homeContent {
+    grid-template-columns: 0.5fr 3fr;
+    padding-top: 3.5rem;
+  }
+
+  .homeImg {
+    order: initial;
+    justify-self: initial;
+  }
+
+  .homeData {
+    grid-column: 1/3;
+  }
+
+  .homeImg {
+    width: 200px;
+    height: 200px;
+    box-shadow: inset 0 0 0 6px rgb(254 254 254 / 30%);
+  }
+
+  .homeScroll {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .homeImg {
+    width: 180px;
+    height: 180px;
+  }
+
+  .homeHand {
+    width: 22px;
+    height: 22px;
+  }
+}

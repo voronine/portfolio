@@ -1,0 +1,25 @@
+.container {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    margin-left: $mb-1-5;
+    margin-right: $mb-1-5;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  $big-font-size: 2.25rem;
+  .container {
+    margin-left: $mb-1;
+    margin-right: $mb-1;
+  }
+}

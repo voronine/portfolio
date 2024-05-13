@@ -1,0 +1,172 @@
+@import "../../scss/01-helpers/variables";
+
+.contactContainer {
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  column-gap: 6rem;
+  padding-bottom: 3rem;
+}
+
+.contactTitle {
+  text-align: center;
+  font-size: $h3-font-size;
+  font-weight: $font-medium;
+  margin-bottom: $mb-1-5;
+}
+
+.contactInfo {
+  display: grid;
+  row-gap: 1rem;
+  grid-template-columns: 300px;
+}
+
+.contactCard {
+  background-color: $container-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.contactCardIcon {
+  font-size: 2rem;
+  color: $title-color;
+  margin-bottom: $mb-0-25;
+}
+
+.contactCardTitle,
+.contactCardData {
+  font-size: $small-font-size;
+}
+
+.contactCardTitle {
+  font-weight: $font-medium;
+}
+
+.contactCardData {
+  display: block;
+  margin-bottom: $mb-0-75;
+}
+
+.contactButton {
+  color: $text-color;
+  font-size: $small-font-size;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.25rem;
+  transform: translate(0.25rem);
+  &:hover {
+    transform: translate(0.25rem);
+  }
+}
+
+.contactButtonIcon {
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.contactForm {
+  width: 360px;
+}
+
+.contactFormDiv {
+  position: relative;
+  height: 4rem;
+
+  &:not(:first-child) {
+    margin-top: $mb-2;
+  }
+}
+
+.contactFormInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background: none;
+  color: $text-color;
+  outline: none;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  z-index: 1;
+  transition: all 0.4s ease 0s;
+  &:focus {
+    border-color: $form-border;
+  }
+  &:focus::placeholder {
+    color: $title-color-dark;
+  }
+}
+
+.contactFormTag {
+  position: absolute;
+  top: -0.75rem;
+  left: 1.25rem;
+  font-size: $smaller-font-size;
+  padding: 0.25rem;
+  background-color: $body-color;
+  z-index: 10;
+}
+
+.contactFormArea {
+  height: 11rem;
+}
+
+.contactFormArea {
+  textarea {
+    resize: none;
+  }
+}
+
+.contactRequired {
+  display: block;
+  font-size: 0.7rem;
+  margin: 0.4rem 0 1.6rem 0;
+  opacity: 0.5;
+}
+
+.incorrectNameValue {
+  display: inline-block;
+  font-size: 0.8rem;
+  opacity: 0.5;
+  color: red;
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 992px) {
+  .contactContainer {
+    column-gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactContainer {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+
+  .contactInfo {
+    justify-content: center;
+  }
+}
+
+.contactForm {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 576px) {
+  .contactInfo {
+    grid-template-columns: 1fr;
+  }
+
+  .contactForm {
+    width: 100%;
+  }
+}
