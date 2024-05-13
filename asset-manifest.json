@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/voronine/portfolio/static/css/main.dd0e0164.css",
-    "main.js": "/voronine/portfolio/static/js/main.7322e35e.js",
-    "Portfolio.css": "/voronine/portfolio/static/css/Portfolio.27de0b09.chunk.css",
-    "Portfolio.js": "/voronine/portfolio/static/js/Portfolio.5665aa3b.chunk.js",
-    "Contact.css": "/voronine/portfolio/static/css/Contact.d6077f67.chunk.css",
-    "Contact.js": "/voronine/portfolio/static/js/Contact.0daef952.chunk.js",
-    "static/media/profile.jpg": "/voronine/portfolio/static/media/profile.9aadf935eb74ca4a8344.jpg",
-    "static/media/portfolioGoodsShop.png": "/voronine/portfolio/static/media/portfolioGoodsShop.1d811421df5867db13c2.png",
-    "static/media/Landing_Bike-Shop.jpg": "/voronine/portfolio/static/media/Landing_Bike-Shop.79894e4e68253dd019d1.jpg",
-    "static/media/portfolioTodo.png": "/voronine/portfolio/static/media/portfolioTodo.bab4f0c024b137bd38cf.png",
-    "static/media/Finance-Landing.jpg": "/voronine/portfolio/static/media/Finance-Landing.5be35b483faa46a85219.jpg",
-    "static/media/binance.jpg": "/voronine/portfolio/static/media/binance.149c7ac047aa59afa3c8.jpg",
-    "static/media/profileHigh.jpg": "/voronine/portfolio/static/media/profileHigh.080c5c12f4709d2d84b5.jpg",
-    "static/media/game.jpg": "/voronine/portfolio/static/media/game.d377ad52c03ae1c4c82f.jpg",
-    "index.html": "/voronine/portfolio/index.html",
-    "main.dd0e0164.css.map": "/voronine/portfolio/static/css/main.dd0e0164.css.map",
-    "main.7322e35e.js.map": "/voronine/portfolio/static/js/main.7322e35e.js.map",
-    "Portfolio.27de0b09.chunk.css.map": "/voronine/portfolio/static/css/Portfolio.27de0b09.chunk.css.map",
-    "Portfolio.5665aa3b.chunk.js.map": "/voronine/portfolio/static/js/Portfolio.5665aa3b.chunk.js.map",
-    "Contact.d6077f67.chunk.css.map": "/voronine/portfolio/static/css/Contact.d6077f67.chunk.css.map",
-    "Contact.0daef952.chunk.js.map": "/voronine/portfolio/static/js/Contact.0daef952.chunk.js.map"
+    "main.css": "/portfolio/static/css/main.14a2027d.css",
+    "main.js": "/portfolio/static/js/main.008eecd7.js",
+    "Portfolio.css": "/portfolio/static/css/Portfolio.27de0b09.chunk.css",
+    "Portfolio.js": "/portfolio/static/js/Portfolio.5665aa3b.chunk.js",
+    "Contact.css": "/portfolio/static/css/Contact.d6077f67.chunk.css",
+    "Contact.js": "/portfolio/static/js/Contact.0daef952.chunk.js",
+    "static/media/profile.jpg": "/portfolio/static/media/profile.9aadf935eb74ca4a8344.jpg",
+    "static/media/portfolioGoodsShop.png": "/portfolio/static/media/portfolioGoodsShop.1d811421df5867db13c2.png",
+    "static/media/Landing_Bike-Shop.jpg": "/portfolio/static/media/Landing_Bike-Shop.79894e4e68253dd019d1.jpg",
+    "static/media/portfolioTodo.png": "/portfolio/static/media/portfolioTodo.bab4f0c024b137bd38cf.png",
+    "static/media/Finance-Landing.jpg": "/portfolio/static/media/Finance-Landing.5be35b483faa46a85219.jpg",
+    "static/media/binance.jpg": "/portfolio/static/media/binance.149c7ac047aa59afa3c8.jpg",
+    "static/media/profileHigh.jpg": "/portfolio/static/media/profileHigh.080c5c12f4709d2d84b5.jpg",
+    "static/media/game.jpg": "/portfolio/static/media/game.d377ad52c03ae1c4c82f.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.14a2027d.css.map": "/portfolio/static/css/main.14a2027d.css.map",
+    "main.008eecd7.js.map": "/portfolio/static/js/main.008eecd7.js.map",
+    "Portfolio.27de0b09.chunk.css.map": "/portfolio/static/css/Portfolio.27de0b09.chunk.css.map",
+    "Portfolio.5665aa3b.chunk.js.map": "/portfolio/static/js/Portfolio.5665aa3b.chunk.js.map",
+    "Contact.d6077f67.chunk.css.map": "/portfolio/static/css/Contact.d6077f67.chunk.css.map",
+    "Contact.0daef952.chunk.js.map": "/portfolio/static/js/Contact.0daef952.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd0e0164.css",
-    "static/js/main.7322e35e.js"
+    "static/css/main.14a2027d.css",
+    "static/js/main.008eecd7.js"
   ]
 }
