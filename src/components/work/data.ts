@@ -50,7 +50,7 @@ export const projectsData: IProjectsData[] = [
     title: 'Game',
     category: 'game',
     gitHub: 'https://github.com/voronine/Game',
-    demo: 'https://voronine.github.io/Game/pp',
+    demo: 'https://voronine.github.io/Game/',
   },
   {
     id: 5,
