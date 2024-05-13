@@ -2,7 +2,7 @@
   "name": "project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://voronine.github.io/portfolio",
+  "homepage": "https://voronine.github.io/portfolio/",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@reduxjs/toolkit": "^1.9.7",
@@ -13,7 +13,7 @@
     "@types/node": "^18.11.13",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
-    "gh-pages": "^6.0.0",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",

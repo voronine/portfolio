@@ -42,7 +42,7 @@ export const projectsData: IProjectsData[] = [
     title: 'Goods Shop',
     category: 'app',
     gitHub: 'https://github.com/fe-jul23-CodeDynasty',
-    demo: 'https://fe-jul23-lgtm.github.io/catalog',
+    demo: 'https://fe-jul23-lgtm.github.io/catalog/',
   },
   {
     id: 4,

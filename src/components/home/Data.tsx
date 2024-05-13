@@ -61,9 +61,7 @@ const Data: React.FC = () => (
     </h1>
     <h3 className={styles.homeSubtitle}>Front-end developer</h3>
     <p className={styles.homeDescription}>
-      I'm an enthusiastic and detail-oriented Frontend Software Engineer seeking an entry-level position
-      with Company to use my skills in coding, troubleshooting complex problems,
-      and assisting in the timely completion of projects.
+      Creative, serious, organized and conscientious, I would enthusiastically like to participate in your company to be able to share my technical skills and strengthen my knowledge with your professionals.
     </p>
     <a className='button button--flex' href="https://t.me/voronine" target='__blank'>
       Say Hello

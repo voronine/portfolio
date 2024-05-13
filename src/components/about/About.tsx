@@ -19,12 +19,8 @@ const About: React.FC = () => (
       <div className={style.aboutData}>
         <Info />
         <p className={style.aboutDescription}>
-          I am a full-stack developer with about two years of experience. I graduated from a
-          technical university with a specialization in radio-electronic devices and
-          computer systems, where I was first introduced to programming.
-          As for myself, I would describe myself as
-          sociable, versatile, curious, and with a positive outlook on life. I pay close
-          attention to details and constantly strive to improve my results.
+          I am a Full-Stack developer with about two years of experience. I graduated from a technical university with a degree in radio-electronic devices and computer systems, where I first started programming.
+          This is the work that concerns me most. And I would like to join your company, which provides the discovery of new concepts and diversity of missions.
 
         </p>
         <a
