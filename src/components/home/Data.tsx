@@ -59,7 +59,7 @@ const Data: React.FC = () => (
         ></path>
       </svg>
     </h1>
-    <h3 className={styles.homeSubtitle}>Front-end developer</h3>
+    <h3 className={styles.homeSubtitle}>Full-stack developer</h3>
     <p className={styles.homeDescription}>
       Creative, serious, organized and conscientious, I would enthusiastically like to participate in your company to be able to share my technical skills and strengthen my knowledge with your professionals.
     </p>
