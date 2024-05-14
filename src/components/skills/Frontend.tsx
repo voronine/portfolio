@@ -35,7 +35,7 @@ const Frontend: React.FC = () => (
         <div className={styles.skillsData}>
           <i className='bx bx-badge-check' />
           <div>
-            <h3 className={styles.skillsName}>React NAtive</h3>
+            <h3 className={styles.skillsName}>React Native</h3>
             <span className={styles.skillsLevel}>Advaced</span>
           </div>
         </div>

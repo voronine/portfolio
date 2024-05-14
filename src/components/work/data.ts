@@ -5,6 +5,7 @@ import portfolioTodo from '../../assets/portfolioTodo.png';
 import portfolioGoodsShop from '../../assets/portfolioGoodsShop.png';
 import game from '../../assets/game.jpg'
 import binance from '../../assets/binance.jpg'
+import native from '../../assets/native.jpg'
 
 //types
 import { IProjectNav, IProjectsData } from '../../features/works/types'
@@ -59,6 +60,14 @@ export const projectsData: IProjectsData[] = [
     category: 'app',
     gitHub: 'https://github.com/voronine/binance_api',
     demo: 'https://voronine.github.io/binance_api/',
+  },
+  {
+    id: 6,
+    image: native,
+    title: 'React Native Finance App',
+    category: 'app',
+    gitHub: 'https://gitlab.com/voroninyevhenii/React-Native_Finance_App/-/commit/6ed1bb76f75d5e0bc612d3cc923323e078ad2c3d',
+    demo: 'in prodaction',
   },
 ]
 
