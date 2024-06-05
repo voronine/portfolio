@@ -3,12 +3,16 @@ import bike from '../../assets/Landing_Bike-Shop.jpg'
 import finance from '../../assets/Finance-Landing.jpg';
 import portfolioTodo from '../../assets/portfolioTodo.png';
 import portfolioGoodsShop from '../../assets/portfolioGoodsShop.png';
-import game from '../../assets/game.jpg'
-import binance from '../../assets/binance.jpg'
-import native from '../../assets/native.jpg'
+import game from '../../assets/game.jpg';
+import binance from '../../assets/binance.jpg';
+import native from '../../assets/native.jpg';
+import starwars from '../../assets/starwars.png';
+import parser from '../../assets/parser.png';
+import navigator from '../../assets/navigator.png';
+
 
 //types
-import { IProjectNav, IProjectsData } from '../../features/works/types'
+import { IProjectNav, IProjectsData } from '../../features/works/types';
 
 
 
@@ -67,6 +71,30 @@ export const projectsData: IProjectsData[] = [
     title: 'React Native Finance App',
     category: 'app',
     gitHub: 'https://gitlab.com/voroninyevhenii/React-Native_Finance_App/-/commit/6ed1bb76f75d5e0bc612d3cc923323e078ad2c3d',
+    demo: 'in prodaction',
+  },
+  {
+    id: 7,
+    image: starwars,
+    title: 'Star-Wars List',
+    category: 'app',
+    gitHub: 'https://github.com/voronine/react-native_app_flat-list',
+    demo: 'in prodaction',
+  },
+  {
+    id: 8,
+    image: parser,
+    title: 'Certificate parser',
+    category: 'web',
+    gitHub: 'https://github.com/voronine/Digital_signature_certificate_parser',
+    demo: 'https://stackblitz.com/~/github.com/voronine/Digital_signature_certificate_parser',
+  },
+  {
+    id: 8,
+    image: navigator,
+    title: 'Navigator',
+    category: 'app',
+    gitHub: 'https://github.com/voronine/react_native_auto_navigator',
     demo: 'in prodaction',
   },
 ]

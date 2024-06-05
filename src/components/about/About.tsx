@@ -19,9 +19,7 @@ const About: React.FC = () => (
       <div className={style.aboutData}>
         <Info />
         <p className={style.aboutDescription}>
-          I am a Full-Stack developer with about two years of experience. I graduated from a technical university with a degree in radio-electronic devices and computer systems, where I first started programming.
-          This is the work that concerns me most. And I would like to join your company, which provides the discovery of new concepts and diversity of missions.
-
+        One cold autumn evening, sitting in my favorite beanbag chair on the 25th floor with a steaming cup of tea, I pondered my journey as a programmer. The soft glow of my laptop screen illuminated my face as I recalled the countless hours spent learning to program and writing code. From the moment I first typed "Hello, World!" in the command line, I realized that programming was my passion, the thread that would weave the fabric of my professional life and future.
         </p>
         <a
           rel="noreferrer"
