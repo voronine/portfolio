@@ -24,7 +24,7 @@ const About: React.FC = () => (
         <a
           rel="noreferrer"
           className='button button--flex'
-          href='https://drive.google.com/file/d/1MscZgkHkx8PwH7ZvJLVMoQz9cpN36GTb/view?usp=sharing'
+          href='https://drive.google.com/file/d/15-sGsnZ1eO5iVbewTSZNXzEwPenm3dHH/view?usp=sharing'
           download
           target='_blank'>
           Download CV
