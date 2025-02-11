@@ -63,7 +63,7 @@ const Data: React.FC = () => (
     <p className={styles.homeDescription}>
       Creative, serious, organized and conscientious, I would enthusiastically like to participate in your company to be able to share my technical skills and strengthen my knowledge with your professionals.
     </p>
-    <a className='button button--flex' href="https://t.me/voronine" target='__blank'>
+    <a className='button button--flex' href="https://t.me/voroninee" target='__blank'>
       Say Hello
       <svg
         className="button__icon"
