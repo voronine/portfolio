@@ -9,7 +9,7 @@ import native from '../../assets/native.jpg';
 import starwars from '../../assets/starwars.png';
 import parser from '../../assets/parser.png';
 import navigator from '../../assets/navigator.png';
-
+import memoryGame from '../../assets/memoryGame.png'
 
 //types
 import { IProjectNav, IProjectsData } from '../../features/works/types';
@@ -90,11 +90,19 @@ export const projectsData: IProjectsData[] = [
     demo: 'https://stackblitz.com/~/github.com/voronine/Digital_signature_certificate_parser',
   },
   {
-    id: 8,
+    id: 9,
     image: navigator,
     title: 'Navigator',
     category: 'app',
     gitHub: 'https://github.com/voronine/react_native_auto_navigator',
+    demo: 'in prodaction',
+  },
+  {
+    id: 10,
+    image: memoryGame,
+    title: 'Memory Game',
+    category: 'game',
+    gitHub: 'https://github.com/voronine/AppGameMobile',
     demo: 'in prodaction',
   },
 ]
