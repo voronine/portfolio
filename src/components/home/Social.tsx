@@ -6,7 +6,7 @@ import styles from './Home.module.scss'
 
 const Social: React.FC = () => (
   <div className={`${styles.homeSocial}`}>
-    <a href="https://t.me/voronine" className={`${styles.homeSocialIcon}`} target="__blank">
+    <a href="https://t.me/voroninee" className={`${styles.homeSocialIcon}`} target="__blank">
       <i className="uil uil-telegram" />
     </a>
     <a href="https://github.com/voronine" className={`${styles.homeSocialIcon}`} target="__blank">
