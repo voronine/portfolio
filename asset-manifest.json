@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1f8576af.css",
-    "main.js": "/portfolio/static/js/main.1704104c.js",
-    "Portfolio.css": "/portfolio/static/css/Portfolio.a3bd8a86.chunk.css",
-    "Portfolio.js": "/portfolio/static/js/Portfolio.7a4deb96.chunk.js",
-    "Contact.css": "/portfolio/static/css/Contact.598eb31a.chunk.css",
-    "Contact.js": "/portfolio/static/js/Contact.8471acbe.chunk.js",
+    "main.css": "/portfolio/static/css/main.8fa6432b.css",
+    "main.js": "/portfolio/static/js/main.017491e7.js",
+    "Portfolio.css": "/portfolio/static/css/Portfolio.5334a0aa.chunk.css",
+    "Portfolio.js": "/portfolio/static/js/Portfolio.678abcd5.chunk.js",
+    "Contact.css": "/portfolio/static/css/Contact.38edd0b4.chunk.css",
+    "Contact.js": "/portfolio/static/js/Contact.6aa2bcd2.chunk.js",
     "static/media/profile.jpg": "/portfolio/static/media/profile.9aadf935eb74ca4a8344.jpg",
     "static/media/portfolioGoodsShop.png": "/portfolio/static/media/portfolioGoodsShop.1d811421df5867db13c2.png",
+    "static/media/memoryGame.png": "/portfolio/static/media/memoryGame.cd819ca5ad9658e3f669.png",
     "static/media/navigator.png": "/portfolio/static/media/navigator.e6e26fde774930b4f90f.png",
     "static/media/Landing_Bike-Shop.jpg": "/portfolio/static/media/Landing_Bike-Shop.79894e4e68253dd019d1.jpg",
     "static/media/portfolioTodo.png": "/portfolio/static/media/portfolioTodo.bab4f0c024b137bd38cf.png",
@@ -19,15 +20,15 @@
     "static/media/game.jpg": "/portfolio/static/media/game.d377ad52c03ae1c4c82f.jpg",
     "static/media/parser.png": "/portfolio/static/media/parser.e269e576351cdde16200.png",
     "index.html": "/portfolio/index.html",
-    "main.1f8576af.css.map": "/portfolio/static/css/main.1f8576af.css.map",
-    "main.1704104c.js.map": "/portfolio/static/js/main.1704104c.js.map",
-    "Portfolio.a3bd8a86.chunk.css.map": "/portfolio/static/css/Portfolio.a3bd8a86.chunk.css.map",
-    "Portfolio.7a4deb96.chunk.js.map": "/portfolio/static/js/Portfolio.7a4deb96.chunk.js.map",
-    "Contact.598eb31a.chunk.css.map": "/portfolio/static/css/Contact.598eb31a.chunk.css.map",
-    "Contact.8471acbe.chunk.js.map": "/portfolio/static/js/Contact.8471acbe.chunk.js.map"
+    "main.8fa6432b.css.map": "/portfolio/static/css/main.8fa6432b.css.map",
+    "main.017491e7.js.map": "/portfolio/static/js/main.017491e7.js.map",
+    "Portfolio.5334a0aa.chunk.css.map": "/portfolio/static/css/Portfolio.5334a0aa.chunk.css.map",
+    "Portfolio.678abcd5.chunk.js.map": "/portfolio/static/js/Portfolio.678abcd5.chunk.js.map",
+    "Contact.38edd0b4.chunk.css.map": "/portfolio/static/css/Contact.38edd0b4.chunk.css.map",
+    "Contact.6aa2bcd2.chunk.js.map": "/portfolio/static/js/Contact.6aa2bcd2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f8576af.css",
-    "static/js/main.1704104c.js"
+    "static/css/main.8fa6432b.css",
+    "static/js/main.017491e7.js"
   ]
 }
