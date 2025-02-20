@@ -9,7 +9,8 @@ import native from '../../assets/native.jpg';
 import starwars from '../../assets/starwars.png';
 import parser from '../../assets/parser.png';
 import navigator from '../../assets/navigator.png';
-import memoryGame from '../../assets/memoryGame.png'
+import memoryGame from '../../assets/memoryGame.png';
+import calendar from '../../assets/calendar.jpg';
 
 //types
 import { IProjectNav, IProjectsData } from '../../features/works/types';
@@ -103,6 +104,14 @@ export const projectsData: IProjectsData[] = [
     title: 'Memory Game',
     category: 'game',
     gitHub: 'https://github.com/voronine/AppGameMobile',
+    demo: 'in prodaction',
+  },
+  {
+    id: 11,
+    image: calendar,
+    title: 'Calendar Todo List',
+    category: 'app',
+    gitHub: 'https://github.com/voronine/calendarApp',
     demo: 'in prodaction',
   },
 ]

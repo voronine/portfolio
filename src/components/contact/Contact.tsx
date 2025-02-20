@@ -55,7 +55,7 @@ const Contact: React.FC = () => {
               <i className={`bx bxl-telegram ${styles.contactCardIcon}`} />
               <h3 className={styles.contactCardTitle}>Telegram</h3>
               <span className={styles.contactCardData}>+380 99 004 89 47</span>
-              <a className={styles.contactButton} rel="noreferrer" target="_blank" href="https://t.me/voronine">Write me <i className={`${styles.contactButtonIcon} bx bx-rigth-arrow-alt`} /></a>
+              <a className={styles.contactButton} rel="noreferrer" target="_blank" href="https://t.me/voroninee">Write me <i className={`${styles.contactButtonIcon} bx bx-rigth-arrow-alt`} /></a>
             </div>
             <div className={styles.contactCard}>
               <i className={`bx bxl-linkedin-square ${styles.contactCardIcon}`} />
