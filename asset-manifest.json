@@ -1,16 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.8fa6432b.css",
-    "main.js": "/portfolio/static/js/main.96a8213a.js",
+    "main.js": "/portfolio/static/js/main.7fd678a5.js",
     "Portfolio.css": "/portfolio/static/css/Portfolio.5334a0aa.chunk.css",
-    "Portfolio.js": "/portfolio/static/js/Portfolio.65c8d771.chunk.js",
+    "Portfolio.js": "/portfolio/static/js/Portfolio.420b234a.chunk.js",
     "Contact.css": "/portfolio/static/css/Contact.38edd0b4.chunk.css",
     "Contact.js": "/portfolio/static/js/Contact.8dabb0ab.chunk.js",
     "static/media/profile.jpg": "/portfolio/static/media/profile.9aadf935eb74ca4a8344.jpg",
     "static/media/portfolioGoodsShop.png": "/portfolio/static/media/portfolioGoodsShop.1d811421df5867db13c2.png",
-    "static/media/memoryGame.png": "/portfolio/static/media/memoryGame.cd819ca5ad9658e3f669.png",
+    "static/media/memoryGame.png": "/portfolio/static/media/memoryGame.de667b8b7bd97f236541.png",
     "static/media/navigator.png": "/portfolio/static/media/navigator.e6e26fde774930b4f90f.png",
-    "static/media/weather.png": "/portfolio/static/media/weather.6f2ee014930617fd3923.png",
+    "static/media/weather.png": "/portfolio/static/media/weather.88f70869db42955e68c8.png",
+    "static/media/calendar.jpg": "/portfolio/static/media/calendar.3115fd6b9a3999e77213.jpg",
     "static/media/Landing_Bike-Shop.jpg": "/portfolio/static/media/Landing_Bike-Shop.79894e4e68253dd019d1.jpg",
     "static/media/portfolioTodo.png": "/portfolio/static/media/portfolioTodo.bab4f0c024b137bd38cf.png",
     "static/media/Finance-Landing.jpg": "/portfolio/static/media/Finance-Landing.5be35b483faa46a85219.jpg",
@@ -18,19 +19,18 @@
     "static/media/starwars.png": "/portfolio/static/media/starwars.8db65f843a1c6192fb64.png",
     "static/media/profileHigh.jpg": "/portfolio/static/media/profileHigh.080c5c12f4709d2d84b5.jpg",
     "static/media/native.jpg": "/portfolio/static/media/native.866dd327ea332bb2de1d.jpg",
-    "static/media/calendar.jpg": "/portfolio/static/media/calendar.824b44b79c70e6edf08d.jpg",
     "static/media/game.jpg": "/portfolio/static/media/game.d377ad52c03ae1c4c82f.jpg",
     "static/media/parser.png": "/portfolio/static/media/parser.e269e576351cdde16200.png",
     "index.html": "/portfolio/index.html",
     "main.8fa6432b.css.map": "/portfolio/static/css/main.8fa6432b.css.map",
-    "main.96a8213a.js.map": "/portfolio/static/js/main.96a8213a.js.map",
+    "main.7fd678a5.js.map": "/portfolio/static/js/main.7fd678a5.js.map",
     "Portfolio.5334a0aa.chunk.css.map": "/portfolio/static/css/Portfolio.5334a0aa.chunk.css.map",
-    "Portfolio.65c8d771.chunk.js.map": "/portfolio/static/js/Portfolio.65c8d771.chunk.js.map",
+    "Portfolio.420b234a.chunk.js.map": "/portfolio/static/js/Portfolio.420b234a.chunk.js.map",
     "Contact.38edd0b4.chunk.css.map": "/portfolio/static/css/Contact.38edd0b4.chunk.css.map",
     "Contact.8dabb0ab.chunk.js.map": "/portfolio/static/js/Contact.8dabb0ab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8fa6432b.css",
-    "static/js/main.96a8213a.js"
+    "static/js/main.7fd678a5.js"
   ]
 }
