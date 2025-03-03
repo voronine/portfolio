@@ -11,6 +11,7 @@ import parser from '../../assets/parser.png';
 import navigator from '../../assets/navigator.png';
 import memoryGame from '../../assets/memoryGame.png';
 import calendar from '../../assets/calendar.jpg';
+import weather from '../../assets/weather.png'
 
 //types
 import { IProjectNav, IProjectsData } from '../../features/works/types';
@@ -112,6 +113,14 @@ export const projectsData: IProjectsData[] = [
     title: 'Calendar Todo List',
     category: 'app',
     gitHub: 'https://github.com/voronine/calendarApp',
+    demo: 'in prodaction',
+  },
+  {
+    id: 12,
+    image: weather,
+    title: 'Weather App',
+    category: 'app',
+    gitHub: 'https://github.com/voronine/weatherApp',
     demo: 'in prodaction',
   },
 ]
