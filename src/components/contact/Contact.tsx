@@ -1,18 +1,9 @@
-//react
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser'
 import { useSelector, useDispatch } from 'react-redux'
-
-//form validation f()
 import formValidation from './contactValidation';
-
-//selectors
 import { validation } from '../../features/contacts/selectors';
-
-//slice
 import { setInputName, setInputEmail } from '../../features/contacts/slice';
-
-//styles
 import styles from './Contact.module.scss'
 
 const Contact: React.FC = () => {
@@ -27,7 +18,6 @@ const Contact: React.FC = () => {
 
     if (formValidation(inputName, inputEmail, dispatch)) {
 
-      //is there an object form?
       form.current && emailjs.sendForm('service_alslkgq', 'template_q034o4l', form.current, 'voronin.yevhenii@gmail.com')
 
       dispatch(setInputEmail(''))

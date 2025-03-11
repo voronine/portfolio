@@ -1,4 +1,3 @@
-//assets
 import bike from '../../assets/Landing_Bike-Shop.jpg'
 import finance from '../../assets/Finance-Landing.jpg';
 import portfolioTodo from '../../assets/portfolioTodo.png';
@@ -11,9 +10,9 @@ import parser from '../../assets/parser.png';
 import navigator from '../../assets/navigator.png';
 import memoryGame from '../../assets/memoryGame.png';
 import calendar from '../../assets/calendar.jpg';
-import weather from '../../assets/weather.png'
+import weather from '../../assets/weather.png';
+import contact from '../../assets/contact.png';
 
-//types
 import { IProjectNav, IProjectsData } from '../../features/works/types';
 
 
@@ -122,6 +121,14 @@ export const projectsData: IProjectsData[] = [
     category: 'app',
     gitHub: 'https://github.com/voronine/weatherApp',
     demo: 'in prodaction',
+  },
+  {
+    id: 13,
+    image: contact,
+    title: 'Contact page',
+    category: 'app',
+    gitHub: 'https://github.com/voronine/test',
+    demo: 'https://test-ebon-two-68.vercel.app/',
   },
 ]
 

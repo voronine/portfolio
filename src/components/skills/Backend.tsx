@@ -1,7 +1,4 @@
-//react
 import React from 'react'
-
-//styles
 import styles from './Skills.module.scss'
 
 const Backend: React.FC = () => {
@@ -33,6 +30,20 @@ const Backend: React.FC = () => {
           </div>
         </div>
         <div className={styles.skillsGroup}>
+          <div className={styles.skillsData}>
+            <i className='bx bx-badge-check' />
+            <div>
+              <h3 className={styles.skillsName}>Next.js</h3>
+              <span className={styles.skillsLevel}>Basic</span>
+            </div>
+          </div>
+          <div className={styles.skillsData}>
+            <i className='bx bx-badge-check' />
+            <div>
+              <h3 className={styles.skillsName}>MongoDB</h3>
+              <span className={styles.skillsLevel}>Basic</span>
+            </div>
+          </div>
           <div className={styles.skillsData}>
             <i className='bx bx-badge-check' />
             <div>

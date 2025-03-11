@@ -1,21 +1,10 @@
-//react
 import React, { useEffect } from 'react'
 import { v4 as getRandomKey } from 'uuid'
 import { useDispatch, useSelector } from 'react-redux'
-
-//data files
 import { projectsData, projectsNav } from './data'
-
-//slice
 import { setProjects, setItem, setActive } from '../../features/works/slice'
-
-//selectors
 import { selectorsWork } from '../../features/works/selectors'
-
-//components
 import WorksItem from './WorksItem'
-
-//styles
 import styles from './Portfolio.module.scss'
 
 const Works: React.FC = () => {

@@ -1,10 +1,5 @@
-//react
 import React from 'react'
-
-//components
 import Works from './Works'
-
-//styles
 import styles from './Portfolio.module.scss'
 
 const Portfolio: React.FC = () => (
