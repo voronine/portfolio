@@ -12,6 +12,7 @@ import memoryGame from '../../assets/memoryGame.png';
 import calendar from '../../assets/calendar.jpg';
 import weather from '../../assets/weather.png';
 import contact from '../../assets/contact.png';
+import cats from '../../assets/cats.png';
 
 import { IProjectNav, IProjectsData } from '../../features/works/types';
 
@@ -129,6 +130,14 @@ export const projectsData: IProjectsData[] = [
     category: 'app',
     gitHub: 'https://github.com/voronine/test',
     demo: 'https://test-ebon-two-68.vercel.app/',
+  },
+  {
+    id: 14,
+    image: cats,
+    title: 'Cats statistics',
+    category: 'app',
+    gitHub: 'https://github.com/voronine/front-end-test-task',
+    demo: 'https://front-end-test-task-eight.vercel.app/',
   },
 ]
 
