@@ -13,6 +13,7 @@ import calendar from '../../assets/calendar.jpg';
 import weather from '../../assets/weather.png';
 import contact from '../../assets/contact.png';
 import cats from '../../assets/cats.png';
+import layout from '../../assets/layout.png';
 
 import { IProjectNav, IProjectsData } from '../../features/works/types';
 
@@ -138,6 +139,14 @@ export const projectsData: IProjectsData[] = [
     category: 'app',
     gitHub: 'https://github.com/voronine/front-end-test-task',
     demo: 'https://front-end-test-task-eight.vercel.app/',
+  },
+  {
+    id: 15,
+    image: layout,
+    title: 'Layout',
+    category: 'app',
+    gitHub: 'https://github.com/voronine/layout',
+    demo: 'https://voronine.github.io/layout/',
   },
 ]
 
