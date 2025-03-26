@@ -1,23 +1,21 @@
 import bike from '../../assets/Landing_Bike-Shop.jpg'
-import finance from '../../assets/Finance-Landing.jpg';
-import portfolioTodo from '../../assets/portfolioTodo.png';
-import portfolioGoodsShop from '../../assets/portfolioGoodsShop.png';
-import game from '../../assets/game.jpg';
-import binance from '../../assets/binance.jpg';
-import native from '../../assets/native.jpg';
-import starwars from '../../assets/starwars.png';
-import parser from '../../assets/parser.png';
-import navigator from '../../assets/navigator.png';
-import memoryGame from '../../assets/memoryGame.png';
-import calendar from '../../assets/calendar.jpg';
-import weather from '../../assets/weather.png';
-import contact from '../../assets/contact.png';
-import cats from '../../assets/cats.png';
-import layout from '../../assets/layout.png';
+import finance from '../../assets/Finance-Landing.jpg'
+import portfolioTodo from '../../assets/portfolioTodo.png'
+import portfolioGoodsShop from '../../assets/portfolioGoodsShop.png'
+import game from '../../assets/game.jpg'
+import binance from '../../assets/binance.jpg'
+import native from '../../assets/native.jpg'
+import starwars from '../../assets/starwars.png'
+import parser from '../../assets/parser.png'
+import navigator from '../../assets/navigator.png'
+import memoryGame from '../../assets/memoryGame.png'
+import calendar from '../../assets/calendar.jpg'
+import weather from '../../assets/weather.png'
+import contact from '../../assets/contact.png'
+import cats from '../../assets/cats.png'
+import layout from '../../assets/layout.png'
 
-import { IProjectNav, IProjectsData } from '../../features/works/types';
-
-
+import { IProjectNav, IProjectsData } from '../../features/works/types'
 
 export const projectsData: IProjectsData[] = [
   {
@@ -149,7 +147,6 @@ export const projectsData: IProjectsData[] = [
     demo: 'https://voronine.github.io/layout/',
   },
 ]
-
 
 export const projectsNav: IProjectNav[] = [
   { name: 'all' },

@@ -1,9 +1,7 @@
-//slice
 import { setCheckValidEmail, setCheckValidName } from '../../features/contacts/slice';
 
 const formValidation = (inputName: string, inputEmail: string, dispatch: any): boolean => {
 
-  //name validation
   if (!inputName) {
     dispatch(setCheckValidName(false))
 
@@ -22,7 +20,6 @@ const formValidation = (inputName: string, inputEmail: string, dispatch: any): b
     }
   }
 
-  //email validation
   const checkValidEmail: RegExpMatchArray | null = String(inputEmail)
     .toLowerCase()
     .match(

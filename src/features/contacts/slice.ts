@@ -1,10 +1,5 @@
-//react
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-
-//types
 import { IValidationStates } from './types'
-
-
 
 const initialState: IValidationStates = {
   inputName: '',

@@ -1,7 +1,4 @@
-//react
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-
-//types
 import { IHeaderStates } from "../header/types";
 
 const initialState: IHeaderStates = {

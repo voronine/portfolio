@@ -1,10 +1,5 @@
-//react
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-
-//types
 import { IProjectNav, IProjectsData, IWorkStates } from "./types";
-
-
 
 const initialState: IWorkStates = {
   item: { name: 'all' },

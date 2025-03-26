@@ -1,11 +1,6 @@
-//react
 import React from 'react'
 import { useDispatch } from 'react-redux'
-
-//slice
 import { setActiveNav } from '../../features/header/slice'
-
-//styles
 import styles from './ScrollUp.module.scss'
 
 const ScrollUp: React.FC = () => {

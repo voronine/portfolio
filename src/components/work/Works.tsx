@@ -9,45 +9,41 @@ import styles from './Portfolio.module.scss'
 
 const Works: React.FC = () => {
   const { item, projects, active } = useSelector(selectorsWork)
-
   const dispatch = useDispatch()
 
   useEffect(() => {
     if (item.name === 'all') {
       dispatch(setProjects(projectsData))
     } else {
-      const newProjects = projectsData.filter(project => project.category.toLowerCase() === item.name)
-
+      const newProjects = projectsData.filter(
+        project => project.category.toLowerCase() === item.name
+      )
       dispatch(setProjects(newProjects))
     }
   }, [item, dispatch])
 
-  const handleClick = (e: { currentTarget: HTMLSpanElement }, i: number): void => {
-    dispatch(setItem({ name: e.currentTarget.textContent && e.currentTarget.textContent.toLowerCase() }))
+  const handleClick = (e: React.MouseEvent<HTMLSpanElement>, i: number): void => {
+    dispatch(setItem({ name: e.currentTarget.textContent?.toLowerCase() || 'all' }))
     dispatch(setActive(i))
   }
 
   return (
     <>
       <div className={styles.workFilters}>
-        {
-          projectsNav.map((item, i: number) => (
-            <span
-              onClick={e => handleClick(e, i)}
-              key={getRandomKey()}
-              className={`${styles.workItem} ${active === i ? styles.workItemActive : ''}`}>{item.name}</span>
-          ))
-        }
+        {projectsNav.map((item, i: number) => (
+          <span
+            onClick={e => handleClick(e, i)}
+            key={getRandomKey()}
+            className={`${styles.workItem} ${active === i ? styles.workItemActive : ''}`}>
+            {item.name}
+          </span>
+        ))}
       </div>
 
       <div className={`${styles.workContainer} container grid`}>
-        {
-          projects.map((project: any) => (
-            <WorksItem
-              {...project}
-              key={getRandomKey()} />
-          ))
-        }
+        {projects.map((project: any) => (
+          <WorksItem {...project} key={getRandomKey()} />
+        ))}
       </div>
     </>
   )
