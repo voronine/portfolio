@@ -9,15 +9,21 @@
   padding: 0.3rem 0.5rem;
   border-radius: 0.4rem;
   z-index: $z-tooltip;
-  transition: all 0.3s ease 0s;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &:hover {
     background-color: $title-color-dark;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 }
 
 .scrollIcon {
   font-size: 1.5rem;
   color: $container-color;
+  transition: color 0.3s ease;
 }
 
 .showScroll {
@@ -29,7 +35,6 @@
     right: 1.5rem;
     padding: 0.25rem 0.4rem;
   }
-
   .scrollIcon {
     font-size: 1.25rem;
   }
