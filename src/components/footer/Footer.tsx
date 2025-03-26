@@ -1,16 +1,12 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-
 import { setActiveNav } from '../../features/header/slice'
-
 import styles from './Footer.module.scss'
 
-
 const Footer: React.FC = () => {
-
   const dispatch = useDispatch()
 
-  const hendlerClick = (navItem: string): void => {
+  const handlerClick = (navItem: string): void => {
     dispatch(setActiveNav(navItem))
   }
 
@@ -21,36 +17,62 @@ const Footer: React.FC = () => {
         <ul className={styles.footerList}>
           <li>
             <a
-              onClick={() => hendlerClick('#about')}
+              onClick={() => handlerClick('#about')}
               className={styles.footerLink}
-              href="#about">About</a>
+              href="#about"
+            >
+              About
+            </a>
           </li>
           <li>
             <a
-              onClick={() => hendlerClick('#portfolio')}
+              onClick={() => handlerClick('#portfolio')}
               className={styles.footerLink}
-              href="#portfolio">Projects</a>
+              href="#portfolio"
+            >
+              Projects
+            </a>
           </li>
           <li>
             <a
-              onClick={() => hendlerClick('#skills')}
+              onClick={() => handlerClick('#skills')}
               className={styles.footerLink}
-              href="#skills">Skills</a>
+              href="#skills"
+            >
+              Skills
+            </a>
           </li>
         </ul>
         <div className={styles.footerSocials}>
-          <a href="https://www.facebook.com/profile.php?id=100006246855853" className={`${styles.footerSocialLink}`} target="__blank">
+          <a
+            href="https://www.facebook.com/profile.php?id=100006246855853"
+            className={styles.footerSocialLink}
+            target="__blank"
+          >
             <i className="bx bxl-facebook" />
           </a>
-          <a href="https://www.instagram.com/voroninee?igsh=OXY3ajRyenI3dnVl" className={`${styles.footerSocialLink}`} target="__blank">
+          <a
+            href="https://www.instagram.com/voroninee?igsh=OXY3ajRyenI3dnVl"
+            className={styles.footerSocialLink}
+            target="__blank"
+          >
             <i className="bx bxl-instagram" />
           </a>
-          <a href="https://twitter.com/" className={`${styles.footerSocialLink}`} target="__blank">
+          <a
+            href="https://twitter.com/"
+            className={styles.footerSocialLink}
+            target="__blank"
+          >
             <i className="bx bxl-twitter" />
           </a>
         </div>
-        <a href='https://github.com/voronine/portfolio' rel='noreferrer' target="_blank" className={styles.footerGit}>
-          Tap here to see this page on github !
+        <a
+          href="https://github.com/voronine/portfolio"
+          rel="noreferrer"
+          target="_blank"
+          className={styles.footerGit}
+        >
+          Tap here to see this page on github!
         </a>
       </div>
     </footer>
