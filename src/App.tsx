@@ -10,7 +10,6 @@ import ScrollUp from './components/scrollUp/ScrollUp';
 
 import './App.scss';
 
-//lazy loading
 const Portfolio = React.lazy(() => import((/*webpackChunkName: 'Portfolio'*/ './components/work/Portfolio')))
 const Contact = React.lazy(() => import((/*webpackChunkName: 'Contact'*/ './components/contact/Contact')))
 
