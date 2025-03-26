@@ -13,16 +13,30 @@ const Contact: React.FC = () => {
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault()
-
+  
     if (formValidation(inputName, inputEmail, dispatch)) {
-      form.current &&
-        emailjs.sendForm('service_alslkgq', 'template_q034o4l', form.current, 'voronin.yevhenii@gmail.com')
-
+      if (form.current) {
+        emailjs
+          .sendForm(
+            'service_63ve94i',   
+            'template_6ga5foi',   
+            form.current,        
+            'Q4EZFVv71qvoeegnz'   
+          )
+          .then((result) => {
+            console.log('Email sent successfully:', result.text)
+          })
+          .catch((error) => {
+            console.error('Email sending error:', JSON.stringify(error, null, 2))
+          })
+      }
+  
       dispatch(setInputEmail(''))
       dispatch(setInputName(''))
       e.currentTarget.reset()
     }
   }
+  
 
   return (
     <section className={`${styles.contact} section`} id="contact">
