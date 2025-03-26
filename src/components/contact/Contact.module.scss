@@ -5,6 +5,7 @@
   justify-content: center;
   column-gap: 6rem;
   padding-bottom: 3rem;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .contactTitle {
@@ -12,6 +13,12 @@
   font-size: $h3-font-size;
   font-weight: $font-medium;
   margin-bottom: $mb-1-5;
+}
+
+.contactSubTitle {
+  text-align: center;
+  margin-bottom: $mb-2;
+  opacity: 0.8;
 }
 
 .contactInfo {
@@ -26,12 +33,21 @@
   padding: 1rem;
   border-radius: 0.75rem;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .contactCardIcon {
   font-size: 2rem;
   color: $title-color;
   margin-bottom: $mb-0-25;
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: rotate(5deg);
+  }
 }
 
 .contactCardTitle,
@@ -55,25 +71,31 @@
   align-items: center;
   justify-content: center;
   column-gap: 0.25rem;
-  transform: translate(0.25rem);
+  transition: transform 0.3s ease, color 0.3s ease;
   &:hover {
-    transform: translate(0.25rem);
+    transform: translateX(5px);
+    color: $title-color-dark;
   }
 }
 
 .contactButtonIcon {
   font-size: 1rem;
-  transition: 0.3s;
+  transition: transform 0.3s ease;
+  /* При наведении на родительскую кнопку, иконка поворачивается */
+  .contactButton:hover & {
+    transform: rotate(5deg);
+  }
 }
 
 .contactForm {
   width: 360px;
+  animation: fadeInUp 0.8s ease-out 0.2s backwards;
+  margin: 0 auto;
 }
 
 .contactFormDiv {
   position: relative;
   height: 4rem;
-
   &:not(:first-child) {
     margin-top: $mb-2;
   }
@@ -92,9 +114,13 @@
   border-radius: 0.75rem;
   padding: 1.5rem;
   z-index: 1;
-  transition: all 0.4s ease 0s;
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
   &:focus {
     border-color: $form-border;
+    box-shadow: 0 0 8px rgba($form-border, 0.6);
+  }
+  &::placeholder {
+    transition: color 0.4s ease;
   }
   &:focus::placeholder {
     color: $title-color-dark;
@@ -109,15 +135,14 @@
   padding: 0.25rem;
   background-color: $body-color;
   z-index: 10;
+  transition: color 0.3s ease;
 }
 
 .contactFormArea {
   height: 11rem;
-}
-
-.contactFormArea {
   textarea {
     resize: none;
+    padding-top: 1.5rem;
   }
 }
 
@@ -140,6 +165,17 @@
   transform: translateX(-50%);
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media screen and (max-width: 992px) {
   .contactContainer {
     column-gap: 3rem;
@@ -151,21 +187,15 @@
     grid-template-columns: 1fr;
     row-gap: 3rem;
   }
-
   .contactInfo {
     justify-content: center;
   }
-}
-
-.contactForm {
-  margin: 0 auto;
 }
 
 @media screen and (max-width: 576px) {
   .contactInfo {
     grid-template-columns: 1fr;
   }
-
   .contactForm {
     width: 100%;
   }
