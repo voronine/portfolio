@@ -11,6 +11,11 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 2rem 4rem;
   border-radius: 1.25rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .skillsTitle {
@@ -35,11 +40,18 @@
 .skillsData {
   display: flex;
   column-gap: 0.5rem;
-}
-
-.skills .bx-badge-check {
-  font-size: 1rem;
-  color: $title-color;
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: translateX(5px);
+  }
+  i {
+    font-size: 1rem;
+    color: $title-color;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 }
 
 .skillsName {
@@ -63,7 +75,6 @@
   .skillsContainer {
     grid-template-columns: 1fr;
   }
-
   .skillsContent {
     padding: 1.5rem;
   }
@@ -73,7 +84,6 @@
   .skillsBox {
     column-gap: 1.25rem;
   }
-
   .skillsName {
     font-size: $small-font-size;
   }

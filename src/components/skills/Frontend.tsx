@@ -1,7 +1,4 @@
-//react
 import React from 'react'
-
-//styles
 import styles from './Skills.module.scss'
 
 const Frontend: React.FC = () => (
