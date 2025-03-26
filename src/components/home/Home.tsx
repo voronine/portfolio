@@ -1,12 +1,7 @@
-//react
 import React from 'react'
-
-//componetns
 import Social from './Social'
 import Data from './Data'
 import ScrollDown from './ScrollDown'
-
-//styles
 import styles from './Home.module.scss'
 
 const Home: React.FC = () => (

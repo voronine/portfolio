@@ -1,4 +1,27 @@
-@import "../../scss/01-helpers/variables";
+@import "../../scss/01-helpers/_variables.scss";
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 .homeContainer {
   row-gap: 7rem;
@@ -9,6 +32,7 @@
   padding-top: 5.5rem;
   column-gap: 2rem;
   align-items: center;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .homeSubtitle {
@@ -43,11 +67,13 @@
 .homeSocialIcon {
   font-size: 1.25rem;
   color: $title-color;
-  transition: 0.3s;
+  transition: transform 0.3s, color 0.3s;
   &:hover {
     color: $title-color-dark;
+    transform: scale(1.1);
   }
 }
+
 .homeTitle {
   font-size: 3rem;
   margin-bottom: $mb-0-25;
@@ -57,7 +83,13 @@
   width: 38px;
   height: 38px;
   margin-left: 0.4rem;
+  animation: pulse 2s infinite;
 }
+
+.homeData {
+  animation: fadeInUp 0.8s ease-out 0.4s backwards;
+}
+
 .homeImg {
   background-image: url("../../assets/profile.jpg");
   background-repeat: no-repeat;
@@ -68,17 +100,18 @@
   box-shadow: inset 0 0 0 9px rgb(254 254 254 / 30%);
   justify-self: center;
   order: 1;
-  animation: home__profile 8s ease-in-out infinite;
+  animation: home__profile 8s ease-in-out infinite, fadeInUp 0.8s ease-out 0.2s backwards;
 }
+
 @keyframes home__profile {
   0% {
-    border-radius: 60% 40% 30% 70% /60% 30% 70% 40%;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
   50% {
-    border-radius: 30% 60% 70% 40% /50% 60% 30% 60%;
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
   }
   100% {
-    border-radius: 60% 40% 30% 70% /60% 30% 70% 40%;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
 }
 
@@ -105,6 +138,7 @@
   margin-right: $mb-0-25;
   margin-left: 2px;
 }
+
 .homeScrollArrow {
   font-size: 1.25rem;
   color: $title-color;
