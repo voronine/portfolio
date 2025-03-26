@@ -4,7 +4,7 @@ import Info from './Info'
 import style from './About.module.scss'
 
 const About: React.FC = () => (
-  <section className="about section" id="about">
+  <section className="about section parallax-section" id="about">
     <h2 className="section__title">About me</h2>
     <span className="section__subTitle">My introduction</span>
     <div className={`${style.aboutContainer} container grid`}>

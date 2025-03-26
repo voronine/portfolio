@@ -22,29 +22,24 @@ const Header: React.FC = () => {
   }
 
   return (
-    <header className={styles.header} id="header">
+    <header className={`${styles.header} parallax-section`} id="header">
       <nav className={`${styles.nav} container`}>
         <a href="#/" className={styles.navLogo}>
           Voronin Yevhenii
         </a>
 
-        <div
-          className={
-            toggle
+        <div className={ toggle
               ? `${styles.navMenu} ${styles.showMenu}`
               : styles.navMenu
-          }
-        >
+          }>
           <ul className={styles.navList}>
             <li className="nav__item">
               <a
                 href="#home"
                 onClick={() => dispatch(setActiveNav('#home'))}
-                className={
-                  activeNav === '#home'
+                className={ activeNav === '#home'
                     ? `${styles.navLink} ${styles.activeLink}`
-                    : styles.navLink
-                }
+                    : styles.navLink }
               >
                 <i className={`uil uil-estate ${styles.navIcon}`} /> Home
               </a>
@@ -53,11 +48,9 @@ const Header: React.FC = () => {
               <a
                 href="#about"
                 onClick={() => dispatch(setActiveNav('#about'))}
-                className={
-                  activeNav === '#about'
+                className={ activeNav === '#about'
                     ? `${styles.navLink} ${styles.activeLink}`
-                    : styles.navLink
-                }
+                    : styles.navLink }
               >
                 <i className={`uil uil-user ${styles.navIcon}`} /> About
               </a>
@@ -66,11 +59,9 @@ const Header: React.FC = () => {
               <a
                 href="#skills"
                 onClick={() => dispatch(setActiveNav('#skills'))}
-                className={
-                  activeNav === '#skills'
+                className={ activeNav === '#skills'
                     ? `${styles.navLink} ${styles.activeLink}`
-                    : styles.navLink
-                }
+                    : styles.navLink }
               >
                 <i className={`uil uil-file-alt ${styles.navIcon}`} /> Skills
               </a>
@@ -79,11 +70,9 @@ const Header: React.FC = () => {
               <a
                 href="#portfolio"
                 onClick={() => dispatch(setActiveNav('#portfolio'))}
-                className={
-                  activeNav === '#portfolio'
+                className={ activeNav === '#portfolio'
                     ? `${styles.navLink} ${styles.activeLink}`
-                    : styles.navLink
-                }
+                    : styles.navLink }
               >
                 <i className={`uil uil-scenery ${styles.navIcon}`} /> Portfolio
               </a>
@@ -92,20 +81,15 @@ const Header: React.FC = () => {
               <a
                 href="#contact"
                 onClick={() => dispatch(setActiveNav('#contact'))}
-                className={
-                  activeNav === '#contact'
+                className={ activeNav === '#contact'
                     ? `${styles.navLink} ${styles.activeLink}`
-                    : styles.navLink
-                }
+                    : styles.navLink }
               >
                 <i className={`uil uil-message ${styles.navIcon}`} /> Contact
               </a>
             </li>
           </ul>
-          <i
-            className={`uil uil-times ${styles.navClose}`}
-            onClick={toggleMenuOnClick}
-          />
+          <i className={`uil uil-times ${styles.navClose}`} onClick={toggleMenuOnClick} />
         </div>
 
         <div className={styles.navToggle} onClick={toggleMenuOnClick}>

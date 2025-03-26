@@ -57,16 +57,12 @@
   display: flex;
   column-gap: 0.5rem;
   transition: transform 0.3s ease;
-  &:hover {
-    transform: translateX(5px);
-  }
+  &:hover { transform: translateX(5px); }
   i {
     font-size: 1rem;
     color: $title-color;
     transition: transform 0.3s ease;
-    &:hover {
-      transform: scale(1.1);
-    }
+    &:hover { transform: scale(1.1); }
   }
 }
 
@@ -97,10 +93,6 @@
 }
 
 @media screen and (max-width: 350px) {
-  .skillsBox {
-    column-gap: 1.25rem;
-  }
-  .skillsName {
-    font-size: $small-font-size;
-  }
+  .skillsBox { column-gap: 1.25rem; }
+  .skillsName { font-size: $small-font-size; }
 }

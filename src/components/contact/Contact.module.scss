@@ -34,9 +34,25 @@
   border-radius: 0.75rem;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
+    transform: skewX(-25deg);
+    transition: left 0.7s ease;
+  }
+  &:hover::after {
+    left: 150%;
   }
 }
 
@@ -81,9 +97,6 @@
 .contactButtonIcon {
   font-size: 1rem;
   transition: transform 0.3s ease;
-  .contactButton:hover & {
-    transform: rotate(5deg);
-  }
 }
 
 .contactForm {

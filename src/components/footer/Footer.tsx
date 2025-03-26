@@ -11,67 +11,38 @@ const Footer: React.FC = () => {
   }
 
   return (
-    <footer className={styles.footer}>
+    <footer className={`${styles.footer} parallax-section`}>
       <div className={`${styles.footerContainer} container`}>
         <h1 className={styles.footerTitle}>Voronin Yevhenii</h1>
         <ul className={styles.footerList}>
           <li>
-            <a
-              onClick={() => handlerClick('#about')}
-              className={styles.footerLink}
-              href="#about"
-            >
+            <a onClick={() => handlerClick('#about')} className={styles.footerLink} href="#about">
               About
             </a>
           </li>
           <li>
-            <a
-              onClick={() => handlerClick('#portfolio')}
-              className={styles.footerLink}
-              href="#portfolio"
-            >
+            <a onClick={() => handlerClick('#portfolio')} className={styles.footerLink} href="#portfolio">
               Projects
             </a>
           </li>
           <li>
-            <a
-              onClick={() => handlerClick('#skills')}
-              className={styles.footerLink}
-              href="#skills"
-            >
+            <a onClick={() => handlerClick('#skills')} className={styles.footerLink} href="#skills">
               Skills
             </a>
           </li>
         </ul>
         <div className={styles.footerSocials}>
-          <a
-            href="https://www.facebook.com/profile.php?id=100006246855853"
-            className={styles.footerSocialLink}
-            target="__blank"
-          >
+          <a href="https://www.facebook.com/profile.php?id=100006246855853" className={styles.footerSocialLink} target="__blank">
             <i className="bx bxl-facebook" />
           </a>
-          <a
-            href="https://www.instagram.com/voroninee?igsh=OXY3ajRyenI3dnVl"
-            className={styles.footerSocialLink}
-            target="__blank"
-          >
+          <a href="https://www.instagram.com/voroninee?igsh=OXY3ajRyenI3dnVl" className={styles.footerSocialLink} target="__blank">
             <i className="bx bxl-instagram" />
           </a>
-          <a
-            href="https://twitter.com/"
-            className={styles.footerSocialLink}
-            target="__blank"
-          >
+          <a href="https://twitter.com/" className={styles.footerSocialLink} target="__blank">
             <i className="bx bxl-twitter" />
           </a>
         </div>
-        <a
-          href="https://github.com/voronine/portfolio"
-          rel="noreferrer"
-          target="_blank"
-          className={styles.footerGit}
-        >
+        <a href="https://github.com/voronine/portfolio" rel="noreferrer" target="_blank" className={styles.footerGit}>
           Tap here to see this page on github!
         </a>
       </div>
