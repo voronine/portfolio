@@ -8,13 +8,29 @@
 
 .skillsContent {
   background-color: $container-color;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0,0,0,0.1);
   padding: 2rem 4rem;
   border-radius: 1.25rem;
+  position: relative;
+  overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
+    transform: skewX(-25deg);
+    transition: left 0.7s ease;
+  }
+  &:hover::after {
+    left: 150%;
   }
 }
 

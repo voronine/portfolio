@@ -15,18 +15,10 @@ const WorksItem: React.FC<TWorkItem> = ({ image, title, demo, gitHub }) => (
     <img className={styles.workImage} src={image} alt="Portfolio work" />
     <h3 className={styles.workTitle}>{title}</h3>
     <div className={styles.workCardLinks}>
-      <a
-        className={styles.workButton}
-        href={demo}
-        rel="noreferrer"
-        target="_blank">
+      <a className={styles.workButton} href={demo} rel="noreferrer" target="_blank">
         Demo <i className={`${styles.workButtonIcon} bx bx-right-arrow-alt`} />
       </a>
-      <a
-        className={styles.workButton}
-        href={gitHub}
-        rel="noreferrer"
-        target="_blank">
+      <a className={styles.workButton} href={gitHub} rel="noreferrer" target="_blank">
         GitHub <i className={`${styles.workButtonIcon} bx bx-right-arrow-alt`} />
       </a>
     </div>

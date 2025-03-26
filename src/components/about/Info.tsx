@@ -1,12 +1,11 @@
 import React from 'react'
-
 import style from './About.module.scss'
 
 const Info: React.FC = () => (
   <div className={`${style.aboutInfo} grid`}>
     <div className={style.aboutBox}>
       <i className={`${style.aboutIcon} bx bx-award`} />
-      <h3 className={style.aboutTitle}> Commercial experience</h3>
+      <h3 className={style.aboutTitle}>Commercial experience</h3>
       <span className={style.aboutSubTitle}>2 year</span>
     </div>
     <div className={style.aboutBox}>

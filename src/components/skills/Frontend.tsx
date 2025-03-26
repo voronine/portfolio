@@ -7,21 +7,21 @@ const Frontend: React.FC = () => (
     <div className={styles.skillsBox}>
       <div className={styles.skillsGroup}>
         <div className={styles.skillsData}>
-          <i className='bx bx-badge-check' />
+          <i className="bx bx-badge-check" />
           <div>
             <h3 className={styles.skillsName}>Typescript</h3>
             <span className={styles.skillsLevel}>High level</span>
           </div>
         </div>
         <div className={styles.skillsData}>
-          <i className='bx bx-badge-check' />
+          <i className="bx bx-badge-check" />
           <div>
             <h3 className={styles.skillsName}>CSS</h3>
             <span className={styles.skillsLevel}>Advanced</span>
           </div>
         </div>
         <div className={styles.skillsData}>
-          <i className='bx bx-badge-check' />
+          <i className="bx bx-badge-check" />
           <div>
             <h3 className={styles.skillsName}>JavaScript</h3>
             <span className={styles.skillsLevel}>High level</span>
@@ -30,24 +30,24 @@ const Frontend: React.FC = () => (
       </div>
       <div className={styles.skillsGroup}>
         <div className={styles.skillsData}>
-          <i className='bx bx-badge-check' />
+          <i className="bx bx-badge-check" />
           <div>
-            <h3 className={styles.skillsName}>React Native</h3>
-            <span className={styles.skillsLevel}>Advaced</span>
+            <h3 className={styles.skillsName}>React</h3>
+            <span className={styles.skillsLevel}>High level</span>
           </div>
         </div>
         <div className={styles.skillsData}>
-          <i className='bx bx-badge-check' />
+          <i className="bx bx-badge-check" />
           <div>
             <h3 className={styles.skillsName}>GIT</h3>
             <span className={styles.skillsLevel}>High level</span>
           </div>
         </div>
         <div className={styles.skillsData}>
-          <i className='bx bx-badge-check' />
+          <i className="bx bx-badge-check" />
           <div>
-            <h3 className={styles.skillsName}>React</h3>
-            <span className={styles.skillsLevel}>High level</span>
+            <h3 className={styles.skillsName}>React Native</h3>
+            <span className={styles.skillsLevel}>Advanced</span>
           </div>
         </div>
       </div>
