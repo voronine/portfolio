@@ -23,7 +23,7 @@ const Education: React.FC = () => (
               Courses
             </h3>
             <span className={styles.skillsLevel}>
-                Full-stack course at Mate Academy
+                Full-stack course at Mate Academy && 
             </span>
             <span className={styles.skillsLevel}>
                 The course of React in ItGid
