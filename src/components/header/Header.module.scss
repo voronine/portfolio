@@ -43,6 +43,9 @@
     display: flex;
     column-gap: 2rem;
   }
+  .navList li {
+    padding: 0.5rem 0;
+  }
 }
 
 .scrollHeader {
@@ -89,27 +92,79 @@
   display: none;
 }
 
+.header__burger {
+  display: none;
+  position: relative;
+  width: 22px;
+  height: 14px;
+  z-index: 5;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.header__burger span {
+  position: absolute;
+  background-color: #31343E;
+  width: 100%;
+  height: 2px;
+  top: 6px;
+  transition: all 0.3s ease;
+  border-radius: 50px;
+}
+
+.header__burger::before,
+.header__burger::after {
+  content: '';
+  background-color: #000;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  transition: all 0.3s ease;
+  border-radius: 50px;
+}
+
+.header__burger::before {
+  top: 0;
+}
+
+.header__burger::after {
+  bottom: 0;
+  width: 50%;
+}
+
+.header__burger.active span {
+  transform: scale(0);
+}
+
+.header__burger.active::before {
+  transform: rotate(45deg);
+  top: 6px;
+}
+
+.header__burger.active::after {
+  transform: rotate(-45deg);
+  width: 100%;
+  bottom: 6px;
+}
+
 @media screen and (max-width: 768px) {
-  .header {
-    top: initial;
-    bottom: 0;
-  }
-  .nav {
-    height: $header-height;
+  .header__burger {
+    display: block;
   }
   .navMenu {
     position: fixed;
     left: 0;
-    bottom: -100%;
+    top: -100%;
     width: 100%;
     background-color: $body-color;
-    padding: 2rem 1.5rem 4rem;
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 1.5rem 1.5rem 0 0;
-    transition: bottom 0.3s ease;
+    padding: 3.4rem 1.5rem 2rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 1.5rem 1.5rem;
+    transition: top 0.3s ease;
   }
   .showMenu {
-    bottom: 0;
+    top: 0;
   }
   .navList {
     display: grid;

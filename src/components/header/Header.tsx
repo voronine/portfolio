@@ -1,23 +1,27 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { setToggle, setActiveNav } from '../../features/header/slice'
 import { selectorHeader } from '../../features/header/selectors'
 import styles from './Header.module.scss'
 
 const Header: React.FC = () => {
-  window.addEventListener('scroll', () => {
-    const header = document.querySelector('#header')
-    if (window.pageYOffset >= 40) {
-      header?.classList.add(`${styles.scrollHeader}`)
-    } else {
-      header?.classList.remove(`${styles.scrollHeader}`)
+  useEffect(() => {
+    const handleScroll = () => {
+      const header = document.querySelector('#header')
+      if (window.pageYOffset >= 40) {
+        header?.classList.add(styles.scrollHeader)
+      } else {
+        header?.classList.remove(styles.scrollHeader)
+      }
     }
-  })
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const { toggle, activeNav } = useSelector(selectorHeader)
   const dispatch = useDispatch()
 
-  const toggleMenuOnClick = (): void => {
+  const toggleBurger = (): void => {
     dispatch(setToggle(!toggle))
   }
 
@@ -28,18 +32,17 @@ const Header: React.FC = () => {
           Voronin Yevhenii
         </a>
 
-        <div className={ toggle
-              ? `${styles.navMenu} ${styles.showMenu}`
-              : styles.navMenu
-          }>
+        <div className={toggle ? `${styles.navMenu} ${styles.showMenu}` : styles.navMenu}>
           <ul className={styles.navList}>
             <li className="nav__item">
               <a
                 href="#home"
                 onClick={() => dispatch(setActiveNav('#home'))}
-                className={ activeNav === '#home'
+                className={
+                  activeNav === '#home'
                     ? `${styles.navLink} ${styles.activeLink}`
-                    : styles.navLink }
+                    : styles.navLink
+                }
               >
                 <i className={`uil uil-estate ${styles.navIcon}`} /> Home
               </a>
@@ -48,9 +51,11 @@ const Header: React.FC = () => {
               <a
                 href="#about"
                 onClick={() => dispatch(setActiveNav('#about'))}
-                className={ activeNav === '#about'
+                className={
+                  activeNav === '#about'
                     ? `${styles.navLink} ${styles.activeLink}`
-                    : styles.navLink }
+                    : styles.navLink
+                }
               >
                 <i className={`uil uil-user ${styles.navIcon}`} /> About
               </a>
@@ -59,9 +64,11 @@ const Header: React.FC = () => {
               <a
                 href="#skills"
                 onClick={() => dispatch(setActiveNav('#skills'))}
-                className={ activeNav === '#skills'
+                className={
+                  activeNav === '#skills'
                     ? `${styles.navLink} ${styles.activeLink}`
-                    : styles.navLink }
+                    : styles.navLink
+                }
               >
                 <i className={`uil uil-file-alt ${styles.navIcon}`} /> Skills
               </a>
@@ -70,9 +77,11 @@ const Header: React.FC = () => {
               <a
                 href="#portfolio"
                 onClick={() => dispatch(setActiveNav('#portfolio'))}
-                className={ activeNav === '#portfolio'
+                className={
+                  activeNav === '#portfolio'
                     ? `${styles.navLink} ${styles.activeLink}`
-                    : styles.navLink }
+                    : styles.navLink
+                }
               >
                 <i className={`uil uil-scenery ${styles.navIcon}`} /> Portfolio
               </a>
@@ -81,20 +90,24 @@ const Header: React.FC = () => {
               <a
                 href="#contact"
                 onClick={() => dispatch(setActiveNav('#contact'))}
-                className={ activeNav === '#contact'
+                className={
+                  activeNav === '#contact'
                     ? `${styles.navLink} ${styles.activeLink}`
-                    : styles.navLink }
+                    : styles.navLink
+                }
               >
                 <i className={`uil uil-message ${styles.navIcon}`} /> Contact
               </a>
             </li>
           </ul>
-          <i className={`uil uil-times ${styles.navClose}`} onClick={toggleMenuOnClick} />
         </div>
 
-        <div className={styles.navToggle} onClick={toggleMenuOnClick}>
-          <i className="uil uil-apps" />
-        </div>
+        <span
+          className={`${styles.header__burger} ${toggle ? styles.active : ''}`}
+          onClick={toggleBurger}
+        >
+          <span></span>
+        </span>
       </nav>
     </header>
   )
