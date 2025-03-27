@@ -1,10 +1,15 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { setToggle, setActiveNav } from '../../features/header/slice'
 import { selectorHeader } from '../../features/header/selectors'
 import styles from './Header.module.scss'
 
 const Header: React.FC = () => {
+  const menuRef = useRef<HTMLDivElement>(null)
+  const burgerRef = useRef<HTMLSpanElement>(null)
+  const { toggle, activeNav } = useSelector(selectorHeader)
+  const dispatch = useDispatch()
+
   useEffect(() => {
     const handleScroll = () => {
       const header = document.querySelector('#header')
@@ -18,8 +23,22 @@ const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const { toggle, activeNav } = useSelector(selectorHeader)
-  const dispatch = useDispatch()
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (toggle) {
+        if (
+          menuRef.current &&
+          burgerRef.current &&
+          !menuRef.current.contains(event.target as Node) &&
+          !burgerRef.current.contains(event.target as Node)
+        ) {
+          dispatch(setToggle(false))
+        }
+      }
+    }
+    document.addEventListener('click', handleClickOutside)
+    return () => document.removeEventListener('click', handleClickOutside)
+  }, [toggle, dispatch])
 
   const toggleBurger = (): void => {
     dispatch(setToggle(!toggle))
@@ -32,7 +51,7 @@ const Header: React.FC = () => {
           Voronin Yevhenii
         </a>
 
-        <div className={toggle ? `${styles.navMenu} ${styles.showMenu}` : styles.navMenu}>
+        <div ref={menuRef} className={toggle ? `${styles.navMenu} ${styles.showMenu}` : styles.navMenu}>
           <ul className={styles.navList}>
             <li className="nav__item">
               <a
@@ -103,6 +122,7 @@ const Header: React.FC = () => {
         </div>
 
         <span
+          ref={burgerRef}
           className={`${styles.header__burger} ${toggle ? styles.active : ''}`}
           onClick={toggleBurger}
         >
