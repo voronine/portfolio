@@ -22,11 +22,27 @@
   width: 350px;
   border-radius: 1.5rem;
   justify-self: center;
+  position: relative;
+  overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   &:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
+    transform: skewX(-25deg);
+    transition: left 0.7s ease;
+  }
+  &:hover::after {
+    left: 150%;
   }
 }
 
@@ -46,13 +62,13 @@
   border-radius: 0.75rem;
   text-align: center;
   padding: 1rem 1.25rem;
+  position: relative;
+  overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   }
-  position: relative;
-  overflow: hidden;
   &::after {
     content: "";
     position: absolute;
@@ -95,26 +111,46 @@
   animation: fadeInUp 0.8s ease-out 0.5s backwards;
 }
 
-.button {
-  position: relative;
-  overflow: hidden;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  &:hover {
-    background-color: darken($container-color, 5%);
-    transform: translateY(-3px);
+@media screen and (max-width: 992px) {
+  .aboutContainer {
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
   }
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255,255,255,0.1);
-    opacity: 0;
-    transition: opacity 0.3s ease;
+
+  .aboutImg {
+    width: 220px;
   }
-  &:hover::after {
-    opacity: 1;
+
+  .aboutBox {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .aboutData {
+    text-align: center;
+  }
+
+  .aboutInfo {
+    justify-content: center;
+  }
+
+  .aboutDescription {
+    padding: 0 5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .aboutInfo {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .aboutDescription {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .aboutInfo {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
