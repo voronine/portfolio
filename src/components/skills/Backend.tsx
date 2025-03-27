@@ -10,21 +10,18 @@ const Backend: React.FC = () => (
           <i className="bx bx-badge-check" />
           <div>
             <h3 className={styles.skillsName}>Node JS</h3>
-            <span className={styles.skillsLevel}>Intermediate</span>
           </div>
         </div>
         <div className={styles.skillsData}>
           <i className="bx bx-badge-check" />
           <div>
             <h3 className={styles.skillsName}>Axios</h3>
-            <span className={styles.skillsLevel}>Basic</span>
           </div>
         </div>
         <div className={styles.skillsData}>
           <i className="bx bx-badge-check" />
           <div>
             <h3 className={styles.skillsName}>SQL</h3>
-            <span className={styles.skillsLevel}>Basic</span>
           </div>
         </div>
       </div>
@@ -33,21 +30,18 @@ const Backend: React.FC = () => (
           <i className="bx bx-badge-check" />
           <div>
             <h3 className={styles.skillsName}>Next.js</h3>
-            <span className={styles.skillsLevel}>Basic</span>
           </div>
         </div>
         <div className={styles.skillsData}>
           <i className="bx bx-badge-check" />
           <div>
             <h3 className={styles.skillsName}>MongoDB</h3>
-            <span className={styles.skillsLevel}>Basic</span>
           </div>
         </div>
         <div className={styles.skillsData}>
           <i className="bx bx-badge-check" />
           <div>
             <h3 className={styles.skillsName}>Express</h3>
-            <span className={styles.skillsLevel}>Basic</span>
           </div>
         </div>
       </div>

@@ -12,7 +12,22 @@ const Education: React.FC = () => (
             <h3 className={styles.skillsName}>
               Magistr of Radio electronic devices and computer systems
             </h3>
-            <span className={styles.skillsLevel}>International Scientific and</span>
+            <span className={styles.skillsLevel}>MNTU - 2011</span>
+          </div>
+        </div>
+
+        <div className={styles.skillsData}>
+          <i className="bx bx-badge-check" />
+          <div>
+            <h3 className={styles.skillsName}>
+              Courses
+            </h3>
+            <span className={styles.skillsLevel}>
+                Full-stack course at Mate Academy
+            </span>
+            <span className={styles.skillsLevel}>
+                The course of React in ItGid
+            </span>
           </div>
         </div>
       </div>
