@@ -14,6 +14,7 @@ import weather from '../../assets/weather.png'
 import contact from '../../assets/contact.png'
 import cats from '../../assets/cats.png'
 import layout from '../../assets/layout.png'
+import popup from '../../assets/popup.png'
 
 import { IProjectNav, IProjectsData } from '../../features/works/types'
 
@@ -145,6 +146,14 @@ export const projectsData: IProjectsData[] = [
     category: 'app',
     gitHub: 'https://github.com/voronine/layout',
     demo: 'https://voronine.github.io/layout/',
+  },
+  {
+    id: 16,
+    image: popup,
+    title: 'Popup',
+    category: 'app',
+    gitHub: 'https://github.com/voronine/popap',
+    demo: 'https://popap-sigma.vercel.app/',
   },
 ]
 
