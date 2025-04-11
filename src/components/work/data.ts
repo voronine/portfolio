@@ -157,7 +157,7 @@ export const projectsData: IProjectsData[] = [
     demo: 'https://popap-sigma.vercel.app/',
   },
   {
-    id: 16,
+    id: 17,
     image: horoscope,
     title: 'Horoscope',
     category: 'app',
