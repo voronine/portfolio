@@ -16,6 +16,7 @@ import cats from '../../assets/cats.png'
 import layout from '../../assets/layout.png'
 import popup from '../../assets/popup.png'
 import horoscope from '../../assets/horoscope.png'
+import calendar_next from '../../assets/calendar.png'
 
 import { IProjectNav, IProjectsData } from '../../features/works/types'
 
@@ -163,6 +164,14 @@ export const projectsData: IProjectsData[] = [
     category: 'app',
     gitHub: 'https://github.com/voronine/horoscope',
     demo: 'https://horoscope-phi-ten.vercel.app/horoscope/Aries/2025-04-11',
+  },
+  {
+    id: 17,
+    image: calendar_next,
+    title: 'Calendar',
+    category: 'app',
+    gitHub: 'https://github.com/voronine/calendar-events',
+    demo: 'https://calendar-events-blond.vercel.app/',
   },
 ]
 
