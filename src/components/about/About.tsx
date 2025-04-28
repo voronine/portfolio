@@ -17,7 +17,7 @@ const About: React.FC = () => (
         <a
           rel="noreferrer"
           className="button button--flex"
-          href="https://drive.google.com/file/d/1iAgLMEXBbH07G9B8fEIa3tCLZBK6vhcA/view?usp=sharing"
+          href="https://drive.google.com/file/d/1VL91Ag8b0AHHrIoC63TaWLChEIqALUI9/view?usp=sharing"
           download
           target="_blank"
         >
