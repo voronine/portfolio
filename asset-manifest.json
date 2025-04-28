@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.be9c2da2.css",
-    "main.js": "/portfolio/static/js/main.cadd86b7.js",
+    "main.js": "/portfolio/static/js/main.5ae0dd56.js",
     "Portfolio.css": "/portfolio/static/css/Portfolio.8fa0a516.chunk.css",
-    "Portfolio.js": "/portfolio/static/js/Portfolio.a022423f.chunk.js",
+    "Portfolio.js": "/portfolio/static/js/Portfolio.5224d5fb.chunk.js",
     "Contact.css": "/portfolio/static/css/Contact.d1a21de6.chunk.css",
     "Contact.js": "/portfolio/static/js/Contact.5417839a.chunk.js",
     "static/media/profile.jpg": "/portfolio/static/media/profile.9aadf935eb74ca4a8344.jpg",
@@ -15,6 +15,7 @@
     "static/media/Landing_Bike-Shop.jpg": "/portfolio/static/media/Landing_Bike-Shop.79894e4e68253dd019d1.jpg",
     "static/media/horoscope.png": "/portfolio/static/media/horoscope.2d3c0e17b1a7da7b91b2.png",
     "static/media/portfolioTodo.png": "/portfolio/static/media/portfolioTodo.bab4f0c024b137bd38cf.png",
+    "static/media/calendar.png": "/portfolio/static/media/calendar.fe39299739bdbecd03c1.png",
     "static/media/Finance-Landing.jpg": "/portfolio/static/media/Finance-Landing.5be35b483faa46a85219.jpg",
     "static/media/cats.png": "/portfolio/static/media/cats.32b761c60666c3dd74d1.png",
     "static/media/binance.jpg": "/portfolio/static/media/binance.149c7ac047aa59afa3c8.jpg",
@@ -28,14 +29,14 @@
     "static/media/contact.png": "/portfolio/static/media/contact.1009fda279724132bcdc.png",
     "index.html": "/portfolio/index.html",
     "main.be9c2da2.css.map": "/portfolio/static/css/main.be9c2da2.css.map",
-    "main.cadd86b7.js.map": "/portfolio/static/js/main.cadd86b7.js.map",
+    "main.5ae0dd56.js.map": "/portfolio/static/js/main.5ae0dd56.js.map",
     "Portfolio.8fa0a516.chunk.css.map": "/portfolio/static/css/Portfolio.8fa0a516.chunk.css.map",
-    "Portfolio.a022423f.chunk.js.map": "/portfolio/static/js/Portfolio.a022423f.chunk.js.map",
+    "Portfolio.5224d5fb.chunk.js.map": "/portfolio/static/js/Portfolio.5224d5fb.chunk.js.map",
     "Contact.d1a21de6.chunk.css.map": "/portfolio/static/css/Contact.d1a21de6.chunk.css.map",
     "Contact.5417839a.chunk.js.map": "/portfolio/static/js/Contact.5417839a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.be9c2da2.css",
-    "static/js/main.cadd86b7.js"
+    "static/js/main.5ae0dd56.js"
   ]
 }
