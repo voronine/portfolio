@@ -5,8 +5,8 @@ const Info: React.FC = () => (
   <div className={`${style.aboutInfo} grid`}>
     <div className={style.aboutBox}>
       <i className={`${style.aboutIcon} bx bx-award`} />
-      <h3 className={style.aboutTitle}>Commercial experience</h3>
-      <span className={style.aboutSubTitle}>2 year</span>
+      <h3 className={style.aboutTitle}>Experience</h3>
+      <span className={style.aboutSubTitle}>3.5+ years</span>
     </div>
     <div className={style.aboutBox}>
       <i className={`${style.aboutIcon} bx bx-message-square-dots`} />
@@ -14,9 +14,9 @@ const Info: React.FC = () => (
       <span className={style.aboutSubTitle}>Intermediate</span>
     </div>
     <div className={style.aboutBox}>
-      <i className={`${style.aboutIcon} bx bx-briefcase-alt`} />
-      <h3 className={style.aboutTitle}>Relocate</h3>
-      <span className={style.aboutSubTitle}>Possible</span>
+      <i className={`${style.aboutIcon} bx bx-group`} />
+      <h3 className={style.aboutTitle}>Team</h3>
+      <span className={style.aboutSubTitle}>4 developers</span>
     </div>
   </div>
 )

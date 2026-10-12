@@ -12,7 +12,7 @@ const About: React.FC = () => (
       <div className={style.aboutData}>
         <Info />
         <p className={style.aboutDescription}>
-          One cold autumn evening, sitting in my favorite beanbag chair on the 25th floor with a steaming cup of tea, I pondered my journey as a programmer. The soft glow of my laptop screen illuminated my face as I recalled the countless hours spent learning to program and writing code. From the moment I first typed "Hello, World!" in the command line, I realized that programming was my passion, the thread that would weave the fabric of my professional life and future.
+          CTO at TrafficJet, leading a team of 4 developers. I own the full development cycle: requirements, architecture, development, releases, infrastructure and tech budget. Over the last year I designed and launched a corporate CRM and several internal products that connect the company's departments, advertising, finance and analytics into one system.
         </p>
         <a
           rel="noreferrer"

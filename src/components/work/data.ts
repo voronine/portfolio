@@ -17,10 +17,104 @@ import layout from '../../assets/layout.png'
 import popup from '../../assets/popup.png'
 import horoscope from '../../assets/horoscope.png'
 import calendar_next from '../../assets/calendar.png'
+import crmBoards from '../../assets/crm-boards.jpg'
+import crmTasks from '../../assets/crm-tasks.jpg'
+import crmLanding from '../../assets/crm-landing.jpg'
+import crmTables from '../../assets/crm-tables.jpg'
+import octobot from '../../assets/octobot.jpg'
+import shortlink from '../../assets/shortlink.jpg'
+import hrPipeline from '../../assets/hr-pipeline.jpg'
+import farmStock from '../../assets/farm-stock.jpg'
+import exchange from '../../assets/exchange.jpg'
 
 import { IProjectNav, IProjectsData } from '../../features/works/types'
 
 export const projectsData: IProjectsData[] = [
+  {
+    id: 100,
+    image: crmBoards,
+    gallery: [crmBoards, crmTasks, crmLanding, crmTables],
+    title: 'TrafficJet CRM',
+    category: 'commercial',
+    role: 'CTO · TrafficJet',
+    period: 'Apr 2025 – Present',
+    summary: 'Corporate CRM built from scratch for the whole company.',
+    highlights: [
+      'Kanban boards, roles, departments, push and Telegram alerts',
+      'Zeus, Keitaro and Cloudflare API integrations',
+      'Landing generator, slot builder, Notion-style tables',
+      'Finance, payroll and task analytics with daily Telegram reports',
+    ],
+    stack: ['React', 'Node.js', 'MongoDB', 'PostgreSQL', 'Docker'],
+  },
+  {
+    id: 101,
+    image: octobot,
+    title: 'OctoBot',
+    category: 'commercial',
+    role: 'CTO · TrafficJet',
+    summary: 'Facebook automation with human-like behaviour.',
+    highlights: [
+      'Bulk posting and comments from many accounts',
+      'Comment dialogs and removal of third-party posts',
+      'Runs through Octo Browser profiles',
+    ],
+    stack: ['Playwright', 'Node.js', 'React', 'Octo Browser API'],
+  },
+  {
+    id: 102,
+    image: shortlink,
+    title: 'Short-link JET',
+    category: 'commercial',
+    role: 'CTO · TrafficJet',
+    summary: 'URL shortener on company domains.',
+    highlights: [
+      'Short links with UTM redirects',
+      'Custom Facebook preview: title, image, description',
+      'Link management with admin access to all domains',
+    ],
+    stack: ['React', 'Node.js', 'MongoDB', 'Cloudflare API'],
+  },
+  {
+    id: 103,
+    image: hrPipeline,
+    title: 'HR CRM',
+    category: 'commercial',
+    role: 'CTO · TrafficJet',
+    summary: 'Recruitment CRM with a candidate pipeline.',
+    highlights: [
+      'Vacancies, Kanban pipeline, calendar and metrics',
+      'Browser extension parsing resumes from LinkedIn, Work.ua, Robota.ua, Djinni',
+    ],
+    stack: ['React', 'Node.js', 'MongoDB', 'Chrome Extension'],
+  },
+  {
+    id: 104,
+    image: farmStock,
+    title: 'Farm CRM',
+    category: 'commercial',
+    role: 'CTO · TrafficJet',
+    summary: 'Account farming and distribution system.',
+    highlights: [
+      'Account stock synced with Octo Browser profiles',
+      'Distribution to clients, finance and cards',
+      'Client portal',
+    ],
+    stack: ['React', 'Node.js', 'MongoDB', 'Octo Browser API'],
+  },
+  {
+    id: 105,
+    image: exchange,
+    title: 'Moneyoy',
+    category: 'commercial',
+    summary: 'Cryptocurrency and currency exchange website.',
+    highlights: [
+      'Live rates calculator and crypto payments',
+      'Remote desktop servers for staff',
+      'Telegram bot for server management',
+    ],
+    stack: ['React', 'Node.js', 'Telegram Bot API', 'VPS'],
+  },
   {
     id: 0,
     image: bike,
@@ -75,7 +169,6 @@ export const projectsData: IProjectsData[] = [
     title: 'React Native Finance App',
     category: 'app',
     gitHub: 'https://gitlab.com/voroninyevhenii/React-Native_Finance_App/-/commit/6ed1bb76f75d5e0bc612d3cc923323e078ad2c3d',
-    demo: 'in prodaction',
   },
   {
     id: 7,
@@ -83,7 +176,6 @@ export const projectsData: IProjectsData[] = [
     title: 'Star-Wars List',
     category: 'app',
     gitHub: 'https://github.com/voronine/react-native_app_flat-list',
-    demo: 'in prodaction',
   },
   {
     id: 8,
@@ -99,7 +191,6 @@ export const projectsData: IProjectsData[] = [
     title: 'Navigator',
     category: 'app',
     gitHub: 'https://github.com/voronine/react_native_auto_navigator',
-    demo: 'in prodaction',
   },
   {
     id: 10,
@@ -107,7 +198,6 @@ export const projectsData: IProjectsData[] = [
     title: 'Memory Game',
     category: 'game',
     gitHub: 'https://github.com/voronine/AppGameMobile',
-    demo: 'in prodaction',
   },
   {
     id: 11,
@@ -115,7 +205,6 @@ export const projectsData: IProjectsData[] = [
     title: 'Calendar Todo List',
     category: 'app',
     gitHub: 'https://github.com/voronine/calendarApp',
-    demo: 'in prodaction',
   },
   {
     id: 12,
@@ -123,7 +212,6 @@ export const projectsData: IProjectsData[] = [
     title: 'Weather App',
     category: 'app',
     gitHub: 'https://github.com/voronine/weatherApp',
-    demo: 'in prodaction',
   },
   {
     id: 13,
@@ -177,7 +265,6 @@ export const projectsData: IProjectsData[] = [
 
 export const projectsNav: IProjectNav[] = [
   { name: 'all' },
-  { name: 'web' },
-  { name: 'app' },
-  { name: 'game' },
+  { name: 'commercial' },
+  { name: 'pet projects' },
 ]

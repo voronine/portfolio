@@ -81,6 +81,19 @@ const Header: React.FC = () => {
             </li>
             <li className="nav__item">
               <a
+                href="#experience"
+                onClick={() => dispatch(setActiveNav('#experience'))}
+                className={
+                  activeNav === '#experience'
+                    ? `${styles.navLink} ${styles.activeLink}`
+                    : styles.navLink
+                }
+              >
+                <i className={`uil uil-briefcase-alt ${styles.navIcon}`} /> Experience
+              </a>
+            </li>
+            <li className="nav__item">
+              <a
                 href="#skills"
                 onClick={() => dispatch(setActiveNav('#skills'))}
                 className={

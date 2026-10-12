@@ -3,8 +3,14 @@ export interface IProjectsData {
   image: string;
   title: string;
   category: string;
-  gitHub: string;
-  demo: string;
+  gitHub?: string;
+  demo?: string;
+  gallery?: string[];
+  role?: string;
+  period?: string;
+  summary?: string;
+  highlights?: string[];
+  stack?: string[];
 }
 
 export interface IProjectNav {

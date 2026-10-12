@@ -1,0 +1,99 @@
+@import "../../scss/01-helpers/variables";
+
+.timeline {
+  max-width: 760px;
+  position: relative;
+  padding-left: 1.75rem;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0.4rem;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    width: 2px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+.item {
+  position: relative;
+  margin-bottom: 1.5rem;
+  &:last-child { margin-bottom: 0; }
+}
+
+.dot {
+  position: absolute;
+  left: -1.75rem;
+  top: 1.6rem;
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 50%;
+  background-color: $title-color;
+  border: 3px solid $body-color;
+}
+
+.card {
+  background-color: $container-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem 1rem;
+  flex-wrap: wrap;
+  margin-bottom: $mb-0-5;
+}
+
+.role {
+  font-size: $normal-font-size;
+  font-weight: $font-medium;
+  color: $title-color;
+}
+
+.company {
+  font-weight: $font-normal;
+  color: $text-color;
+}
+
+.period {
+  font-size: $smaller-font-size;
+  color: $text-color;
+  white-space: nowrap;
+}
+
+.summary {
+  font-size: $small-font-size;
+  color: $title-color;
+  margin-bottom: $mb-0-5;
+}
+
+.points {
+  padding-left: 1rem;
+  margin-bottom: $mb-0-5;
+  list-style: disc;
+  li {
+    font-size: $small-font-size;
+    color: $text-color;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.stack {
+  font-size: $smaller-font-size;
+  color: $title-color;
+}
+
+@media screen and (max-width: 576px) {
+  .timeline { padding-left: 1.25rem; }
+  .dot { left: -1.25rem; }
+  .card { padding: 1rem; }
+}

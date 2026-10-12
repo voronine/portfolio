@@ -55,9 +55,9 @@ const Data: React.FC = () => (
         />
       </svg>
     </h1>
-    <h3 className={styles.homeSubtitle}>Full-stack developer</h3>
+    <h3 className={styles.homeSubtitle}>CTO · Full-Stack Engineer</h3>
     <p className={styles.homeDescription}>
-      Creative, serious, organized and conscientious, I would enthusiastically like to participate in your company to be able to share my technical skills and strengthen my knowledge with your professionals.
+      I build CRM systems, automation and infrastructure from scratch and lead the team that ships them. React, Node.js, MongoDB, PostgreSQL, Docker.
     </p>
     <a className="button button--flex" href="https://t.me/voroninee" target="__blank">
       Say Hello

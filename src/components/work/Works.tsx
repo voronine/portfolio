@@ -5,6 +5,7 @@ import { projectsData, projectsNav } from './data'
 import { setProjects, setItem, setActive } from '../../features/works/slice'
 import { selectorsWork } from '../../features/works/selectors'
 import WorksItem from './WorksItem'
+import { IProjectsData } from '../../features/works/types'
 import styles from './Portfolio.module.scss'
 
 const Works: React.FC = () => {
@@ -15,8 +16,9 @@ const Works: React.FC = () => {
     if (item.name === 'all') {
       dispatch(setProjects(projectsData))
     } else {
+      const commercial = item.name === 'commercial'
       const newProjects = projectsData.filter(
-        project => project.category.toLowerCase() === item.name
+        project => (project.category === 'commercial') === commercial
       )
       dispatch(setProjects(newProjects))
     }
@@ -26,6 +28,10 @@ const Works: React.FC = () => {
     dispatch(setItem({ name: e.currentTarget.textContent?.toLowerCase() || 'all' }))
     dispatch(setActive(i))
   }
+
+  const isCase = (p: IProjectsData) => (p.gallery?.length || 0) > 1
+  const cases = (projects as IProjectsData[]).filter(isCase)
+  const works = (projects as IProjectsData[]).filter(p => !isCase(p))
 
   return (
     <>
@@ -40,8 +46,16 @@ const Works: React.FC = () => {
         ))}
       </div>
 
+      {cases.length > 0 && (
+        <div className={`${styles.caseContainer} container`}>
+          {cases.map(project => (
+            <WorksItem {...project} key={project.id} />
+          ))}
+        </div>
+      )}
+
       <div className={`${styles.workContainer} container grid`}>
-        {projects.map((project: any) => (
+        {works.map(project => (
           <WorksItem {...project} key={getRandomKey()} />
         ))}
       </div>
