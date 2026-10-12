@@ -4,11 +4,17 @@ import styles from './Skills.module.scss'
 type SkillGroup = { title: string; items: string[] }
 
 const groups: SkillGroup[] = [
-  { title: 'Frontend & Mobile', items: ['React', 'TypeScript', 'JavaScript', 'Redux Toolkit', 'React Native', 'HTML / CSS'] },
-  { title: 'Backend & Databases', items: ['Node.js', 'REST API', 'WebSocket', 'Microservices', 'MongoDB', 'PostgreSQL'] },
-  { title: 'DevOps & Security', items: ['Docker', 'Nginx', 'VPS / Cloud', 'GitHub Actions CI/CD', 'Cloudflare', 'JWT / RBAC'] },
+  {
+    title: 'Frontend',
+    items: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'Redux Toolkit', 'React Native', 'HTML / SCSS', 'Tailwind CSS', 'Material UI', 'Formik', 'Axios', 'Figma'],
+  },
+  {
+    title: 'Backend',
+    items: ['Node.js', 'Express', 'REST API', 'WebSocket', 'Microservices', 'MongoDB', 'PostgreSQL', 'SQL'],
+  },
+  { title: 'DevOps & Security', items: ['Docker', 'Nginx', 'VPS / Cloud', 'GitHub Actions', 'Git', 'Cloudflare', 'JWT / RBAC', 'SSL / DNS'] },
   { title: 'Automation & AI', items: ['Playwright', 'Claude AI', 'Telegram Bot API', 'Chrome Extensions'] },
-  { title: 'Marketing & Analytics', items: ['Keitaro', 'Zeus', 'Meta Pixel', 'Google Ads (GCLID)', 'AppsFlyer', 'Google Play Console'] },
+  { title: 'Marketing & Analytics', items: ['Keitaro', 'Zeus', 'Meta Pixel', 'Google Ads', 'AppsFlyer', 'Google Play'] },
   { title: 'Education', items: ["Master's, Radio Electronics and Computer Systems · MNTU", 'Full-Stack course · Mate Academy', 'React course · ItGid'] },
 ]
 
@@ -31,7 +37,7 @@ const Skills: React.FC = () => (
                 {col.map(item => (
                   <div key={item} className={styles.skillsData}>
                     <i className="bx bx-badge-check" />
-                    <h3 className={styles.skillsName}>{item}</h3>
+                    <h3 className={`${styles.skillsName} ${group.title === 'Education' ? styles.skillsWrap : ''}`}>{item}</h3>
                   </div>
                 ))}
               </div>

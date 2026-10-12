@@ -44,7 +44,7 @@
 .skillsBox {
   display: flex;
   justify-content: center;
-  column-gap: 2rem;
+  column-gap: 1.25rem;
 }
 
 .skillsGroup {
@@ -96,4 +96,12 @@
 @media screen and (max-width: 350px) {
   .skillsBox { column-gap: 1.25rem; }
   .skillsName { font-size: $small-font-size; }
+}
+
+.skillsName {
+  white-space: nowrap;
+}
+
+.skillsWrap {
+  white-space: normal;
 }

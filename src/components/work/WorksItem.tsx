@@ -51,30 +51,16 @@ const Slider: React.FC<{ shots: string[]; title: string }> = ({ shots, title }) 
   )
 }
 
-const CaseCard: React.FC<IProjectsData> = ({ title, image, gallery, role, period, summary, highlights, stack }) => (
-  <article className={`${styles.workCard} ${styles.caseCard}`}>
-    <Slider shots={gallery?.length ? gallery : [image]} title={title} />
-    <div>
-      <h3 className={styles.caseTitle}>{title}</h3>
-      {(role || period) && <span className={styles.caseMeta}>{[role, period].filter(Boolean).join(' · ')}</span>}
-      {summary && <p className={styles.caseSummary}>{summary}</p>}
-      {highlights?.length ? (
-        <ul className={styles.caseList}>
-          {highlights.map(item => <li key={item}>{item}</li>)}
-        </ul>
-      ) : null}
-      {stack?.length ? <p className={styles.caseStack}>{stack.join(' · ')}</p> : null}
-    </div>
-  </article>
-)
-
 const WorksItem: React.FC<IProjectsData> = props => {
   const { image, title, demo, gitHub, gallery, summary, stack } = props
-  if ((gallery?.length || 0) > 1) return <CaseCard {...props} />
 
   return (
     <div className={styles.workCard}>
-      <img className={`${styles.workImage} ${summary ? styles.workShot : ''}`} src={image} alt={title} />
+      {(gallery?.length || 0) > 1 ? (
+        <Slider shots={gallery as string[]} title={title} />
+      ) : (
+        <img className={`${styles.workImage} ${summary ? styles.workShot : ''}`} src={image} alt={title} />
+      )}
       <h3 className={styles.workTitle}>{title}</h3>
       {summary && <p className={styles.workSummary}>{summary}</p>}
       {stack?.length ? <p className={styles.workStack}>{stack.join(' · ')}</p> : null}

@@ -127,25 +127,14 @@
   background-position: center;
 }
 
-.caseContainer {
-  display: grid;
-  gap: 2rem;
-  justify-items: center;
-  margin-bottom: 3rem;
-  animation: fadeInUp 0.8s ease-out;
-}
 
-.caseCard {
-  width: 100%;
-  max-width: 718px;
-  text-align: left;
-  &::after { display: none; }
-}
 
 .slider {
   position: relative;
+  width: 295px;
   overflow: hidden;
   border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
   margin-bottom: $mb-1;
   &:hover .sliderArrow { opacity: 1; }
 }
@@ -213,40 +202,10 @@
   background-color: $title-color;
 }
 
-.caseTitle {
-  font-size: $normal-font-size;
-  font-weight: $font-medium;
-  margin-bottom: $mb-0-25;
-}
 
-.caseMeta {
-  display: block;
-  font-size: $smaller-font-size;
-  color: $text-color;
-  margin-bottom: $mb-0-75;
-}
 
-.caseSummary {
-  font-size: $small-font-size;
-  color: $title-color;
-  margin-bottom: $mb-0-5;
-}
 
-.caseList {
-  padding-left: 1rem;
-  margin-bottom: $mb-0-75;
-  list-style: disc;
-  li {
-    font-size: $small-font-size;
-    color: $text-color;
-    margin-bottom: 0.25rem;
-  }
-}
 
-.caseStack {
-  font-size: $smaller-font-size;
-  color: $title-color;
-}
 
 @media screen and (max-width: 992px) {
   .workContainer { gap: 1.25rem; }
@@ -261,7 +220,7 @@
 
 @media screen and (max-width: 576px) {
   .workContainer { grid-template-columns: 1fr; }
-  .workSummary, .workStack { width: 100%; }
+  .workSummary, .workStack, .slider { width: 100%; }
   .sliderArrow { opacity: 1; width: 2rem; height: 2rem; }
   .workImage { width: 100%; }
 }

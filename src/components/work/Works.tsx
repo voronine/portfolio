@@ -29,10 +29,6 @@ const Works: React.FC = () => {
     dispatch(setActive(i))
   }
 
-  const isCase = (p: IProjectsData) => (p.gallery?.length || 0) > 1
-  const cases = (projects as IProjectsData[]).filter(isCase)
-  const works = (projects as IProjectsData[]).filter(p => !isCase(p))
-
   return (
     <>
       <div className={styles.workFilters}>
@@ -46,16 +42,8 @@ const Works: React.FC = () => {
         ))}
       </div>
 
-      {cases.length > 0 && (
-        <div className={`${styles.caseContainer} container`}>
-          {cases.map(project => (
-            <WorksItem {...project} key={project.id} />
-          ))}
-        </div>
-      )}
-
       <div className={`${styles.workContainer} container grid`}>
-        {works.map(project => (
+        {(projects as IProjectsData[]).map(project => (
           <WorksItem {...project} key={getRandomKey()} />
         ))}
       </div>
