@@ -35,6 +35,15 @@
   animation: fadeInUp 0.8s ease-out;
 }
 
+.homeLocation {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.35rem;
+  font-size: $small-font-size;
+  color: $text-color;
+  margin-bottom: $mb-1;
+}
+
 .homeSubtitle {
   position: relative;
   font-size: $h3-font-size;

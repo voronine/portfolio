@@ -8,7 +8,7 @@ const About: React.FC = () => (
     <h2 className="section__title">About me</h2>
     <span className="section__subTitle">My introduction</span>
     <div className={`${style.aboutContainer} container grid`}>
-      <img className={style.aboutImg} src={profile} alt="Voronin_Yevhenii" />
+      <img className={style.aboutImg} src={profile} alt="Yevhenii Voronin" />
       <div className={style.aboutData}>
         <Info />
         <p className={style.aboutDescription}>
@@ -17,8 +17,8 @@ const About: React.FC = () => (
         <a
           rel="noreferrer"
           className="button button--flex"
-          href="https://drive.google.com/file/d/1VL91Ag8b0AHHrIoC63TaWLChEIqALUI9/view?usp=sharing"
-          download
+          href={`${process.env.PUBLIC_URL}/Yevhenii_Voronin_CV.pdf`}
+          download="Yevhenii_Voronin_CV.pdf"
           target="_blank"
         >
           Download CV

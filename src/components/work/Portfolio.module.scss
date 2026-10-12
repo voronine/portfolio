@@ -94,6 +94,25 @@
   border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
+.workNote {
+  text-align: center;
+  font-size: $smaller-font-size;
+  color: $text-color;
+  margin: -2.5rem 0 $mb-2;
+}
+
+.workBadge {
+  align-self: center;
+  font-size: $tiny-font-size;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $text-color;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 999px;
+  padding: 0.1rem 0.55rem;
+  margin-bottom: $mb-0-5;
+}
+
 .workSummary {
   font-size: $small-font-size;
   color: $text-color;

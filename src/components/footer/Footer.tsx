@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
   return (
     <footer className={`${styles.footer} parallax-section`}>
       <div className={`${styles.footerContainer} container`}>
-        <h1 className={styles.footerTitle}>Voronin Yevhenii</h1>
+        <h1 className={styles.footerTitle}>Yevhenii Voronin</h1>
         <ul className={styles.footerList}>
           <li>
             <a onClick={() => handlerClick('#about')} className={styles.footerLink} href="#about">

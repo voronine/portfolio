@@ -4,7 +4,7 @@ import styles from './Home.module.scss'
 const Data: React.FC = () => (
   <div className={styles.homeData}>
     <h1 className={styles.homeTitle}>
-      Voronin Yevhenii
+      Yevhenii Voronin
       <svg
         width="36"
         height="36"
@@ -56,6 +56,9 @@ const Data: React.FC = () => (
       </svg>
     </h1>
     <h3 className={styles.homeSubtitle}>CTO · Full-Stack Engineer</h3>
+    <span className={styles.homeLocation}>
+      <i className="bx bx-map" /> Kyiv, Ukraine · Open to remote
+    </span>
     <p className={styles.homeDescription}>
       I build CRM systems, automation and infrastructure from scratch and lead the team that ships them. React, Node.js, MongoDB, PostgreSQL, Docker.
     </p>

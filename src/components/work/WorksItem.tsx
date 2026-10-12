@@ -52,7 +52,7 @@ const Slider: React.FC<{ shots: string[]; title: string }> = ({ shots, title }) 
 }
 
 const WorksItem: React.FC<IProjectsData> = props => {
-  const { image, title, demo, gitHub, gallery, summary, stack } = props
+  const { image, title, category, demo, gitHub, gallery, summary, stack } = props
 
   return (
     <div className={styles.workCard}>
@@ -62,6 +62,7 @@ const WorksItem: React.FC<IProjectsData> = props => {
         <img className={`${styles.workImage} ${summary ? styles.workShot : ''}`} src={image} alt={title} />
       )}
       <h3 className={styles.workTitle}>{title}</h3>
+      {category === 'commercial' && <span className={styles.workBadge}>Commercial · NDA</span>}
       {summary && <p className={styles.workSummary}>{summary}</p>}
       {stack?.length ? <p className={styles.workStack}>{stack.join(' · ')}</p> : null}
       <div className={styles.workCardLinks}>

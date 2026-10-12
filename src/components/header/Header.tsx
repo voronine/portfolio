@@ -48,7 +48,7 @@ const Header: React.FC = () => {
     <header className={`${styles.header} parallax-section`} id="header">
       <nav className={`${styles.nav} container`}>
         <a href="#/" className={styles.navLogo}>
-          Voronin Yevhenii
+          Yevhenii Voronin
         </a>
 
         <div ref={menuRef} className={toggle ? `${styles.navMenu} ${styles.showMenu}` : styles.navMenu}>

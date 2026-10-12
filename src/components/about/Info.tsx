@@ -11,7 +11,7 @@ const Info: React.FC = () => (
     <div className={style.aboutBox}>
       <i className={`${style.aboutIcon} bx bx-message-square-dots`} />
       <h3 className={style.aboutTitle}>English</h3>
-      <span className={style.aboutSubTitle}>Intermediate</span>
+      <span className={style.aboutSubTitle}>B1</span>
     </div>
     <div className={style.aboutBox}>
       <i className={`${style.aboutIcon} bx bx-group`} />
