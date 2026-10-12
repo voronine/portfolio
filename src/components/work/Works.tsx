@@ -42,7 +42,7 @@ const Works: React.FC = () => {
         ))}
       </div>
 
-      <div className={`${styles.workContainer} container grid`}>
+      <div className={`${styles.workContainer} grid`}>
         {(projects as IProjectsData[]).map(project => (
           <WorksItem {...project} key={getRandomKey()} />
         ))}

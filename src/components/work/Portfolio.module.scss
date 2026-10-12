@@ -31,13 +31,18 @@
 }
 
 .workContainer {
-  grid-template-columns: repeat(2, max-content);
-  gap: 3rem;
-  justify-content: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
   animation: fadeInUp 0.8s ease-out;
 }
 
 .workCard {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
   background-color: $container-color;
   border: 1px solid rgba(0,0,0,0.1);
   padding: 1.25rem;
@@ -64,7 +69,10 @@
 }
 
 .workImage {
-  width: 295px;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  background-color: $body-color;
   border-radius: 1rem;
   margin-bottom: $mb-1;
   transition: transform 0.3s ease;
@@ -87,7 +95,6 @@
 }
 
 .workSummary {
-  width: 295px;
   font-size: $small-font-size;
   color: $text-color;
   text-align: center;
@@ -95,13 +102,14 @@
 }
 
 .workStack {
-  width: 295px;
   font-size: $smaller-font-size;
   color: $title-color;
   text-align: center;
 }
 
 .workCardLinks {
+  margin-top: auto;
+  padding-top: $mb-0-5;
   display: flex;
   justify-content: space-between;
 }
@@ -131,7 +139,7 @@
 
 .slider {
   position: relative;
-  width: 295px;
+  width: 100%;
   overflow: hidden;
   border-radius: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.08);
@@ -214,15 +222,9 @@
   .workTitle { margin-bottom: 0.25rem; }
 }
 
-@media screen and (max-width: 768px) {
-  .workContainer { grid-template-columns: max-content; }
-}
-
 @media screen and (max-width: 576px) {
   .workContainer { grid-template-columns: 1fr; }
-  .workSummary, .workStack, .slider { width: 100%; }
   .sliderArrow { opacity: 1; width: 2rem; height: 2rem; }
-  .workImage { width: 100%; }
 }
 
 @media screen and (max-width: 350px) {
