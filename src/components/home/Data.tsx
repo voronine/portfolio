@@ -60,7 +60,7 @@ const Data: React.FC = () => (
       <i className="bx bx-map" /> Kyiv, Ukraine · Open to remote
     </span>
     <p className={styles.homeDescription}>
-      I build CRM systems, automation and infrastructure from scratch and lead the team that ships them. React, Node.js, MongoDB, PostgreSQL, Docker.
+      I build CRM systems, automation and infrastructure from scratch and lead the team that ships them. React, Node.js, MongoDB, Docker.
     </p>
     <a className="button button--flex" href="https://t.me/voroninee" target="__blank">
       Say Hello

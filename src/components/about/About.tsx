@@ -12,7 +12,7 @@ const About: React.FC = () => (
       <div className={style.aboutData}>
         <Info />
         <p className={style.aboutDescription}>
-          CTO at TrafficJet, leading a team of 4 developers. I own the full development cycle: requirements, architecture, development, releases, infrastructure and tech budget. Over the last year I designed and launched a corporate CRM and several internal products that connect the company's departments, advertising, finance and analytics into one system.
+          CTO at TrafficJet, leading the development team. I own the full development cycle: requirements, architecture, development, releases, infrastructure and tech budget. Over the last year I designed and launched a corporate CRM and several internal products that connect the company's departments, advertising, finance and analytics into one system.
         </p>
         <a
           rel="noreferrer"

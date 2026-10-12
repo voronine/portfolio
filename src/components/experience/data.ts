@@ -13,16 +13,16 @@ export const experience: IExperience[] = [
     company: 'TrafficJet',
     period: 'Apr 2025 – Present',
     summary:
-      'Lead a team of 4 developers and own the full development lifecycle: architecture, planning, code review, releases, infrastructure and tech budget.',
+      'Lead the development team and own the full development lifecycle: architecture, planning, code review, releases, infrastructure and tech budget.',
     points: [
-      'Built a corporate CRM from scratch: Kanban boards, RBAC, department dashboards, finance, payroll and task analytics',
+      'Built a corporate CRM from scratch used by ~100 employees across 6 departments: Kanban boards, RBAC, department dashboards, finance, payroll and task analytics',
       'Integrated Zeus, Keitaro and Cloudflare API; automated daily profit reports to Telegram',
       'Shipped internal products: OctoBot, HR CRM with a browser extension, Farm CRM, URL shortener',
       'Built a crypto exchange platform with remote server infrastructure managed by a Telegram bot',
       'Set up tracking (Keitaro, Meta Pixel, Google Ads GCLID, AppsFlyer) and published Android apps to Google Play',
       'Run Docker, Nginx, VPS, GitHub Actions CI/CD, JWT/RBAC, Cloudflare protection, backups and monitoring',
     ],
-    stack: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'PostgreSQL', 'Docker', 'Playwright', 'Claude AI'],
+    stack: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'Docker', 'Playwright', 'Claude AI'],
   },
   {
     role: 'Frontend Developer',

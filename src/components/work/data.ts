@@ -38,14 +38,14 @@ export const projectsData: IProjectsData[] = [
     category: 'commercial',
     role: 'CTO · TrafficJet',
     period: 'Apr 2025 – Present',
-    summary: 'Corporate CRM built from scratch for the whole company.',
+    summary: 'Corporate CRM built from scratch, used by ~100 employees across 6 departments.',
     highlights: [
       'Kanban boards, roles, departments, push and Telegram alerts',
       'Zeus, Keitaro and Cloudflare API integrations',
       'Landing generator, slot builder, Notion-style tables',
       'Finance, payroll and task analytics with daily Telegram reports',
     ],
-    stack: ['React', 'Node.js', 'MongoDB', 'PostgreSQL', 'Docker'],
+    stack: ['React', 'Node.js', 'MongoDB', 'Docker'],
   },
   {
     id: 101,
