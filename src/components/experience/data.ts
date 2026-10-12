@@ -47,8 +47,8 @@ export const experience: IExperience[] = [
   },
   {
     role: 'Full-Stack Developer',
-    company: 'Freelance',
-    period: 'Feb 2023 – Nov 2023',
+    company: 'Training Projects & Self-Education',
+    period: 'Feb 2023 – Mar 2024',
     summary: 'Delivered full-stack tasks on schedule with regular code reviews by middle and senior developers.',
     stack: ['React', 'Node.js', 'JavaScript'],
   },

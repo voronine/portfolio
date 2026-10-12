@@ -15,7 +15,7 @@ const groups: SkillGroup[] = [
   { title: 'DevOps & Security', items: ['Docker', 'Nginx', 'VPS / Cloud', 'GitHub Actions', 'Git', 'Cloudflare', 'JWT / RBAC', 'SSL / DNS'] },
   { title: 'Automation & AI', items: ['Playwright', 'Claude AI', 'Telegram Bot API', 'Chrome Extensions'] },
   { title: 'Marketing & Analytics', items: ['Keitaro', 'Zeus', 'Meta Pixel', 'Google Ads', 'AppsFlyer', 'Google Play'] },
-  { title: 'Education', items: ["Master's, Radio Electronics and Computer Systems · MNTU", 'Full-Stack course · Mate Academy', 'React course · ItGid'] },
+  { title: 'Education', items: ["Master's, Computer Science · Yuri Bugai University, 2025", "Master's, Radio Electronics and Computer Systems · MNTU, 2011", 'Full-Stack course · Mate Academy', 'React course · ItGid'] },
 ]
 
 const half = (items: string[]) => {
